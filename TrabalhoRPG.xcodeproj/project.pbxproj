@@ -14,6 +14,14 @@
 		CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5DC93E1AB0EF6D00760540 /* Images.xcassets */; };
 		CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5DC9401AB0EF6D00760540 /* LaunchScreen.xib */; };
 		CF5DC94E1AB0EF6D00760540 /* TrabalhoRPGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5DC94D1AB0EF6D00760540 /* TrabalhoRPGTests.m */; };
+		CFEC2D4D1AB0F1C50001709A /* Cenario.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D4C1AB0F1C50001709A /* Cenario.m */; };
+		CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D4F1AB0F4E40001709A /* Transicao.m */; };
+		CFEC2D531AB0F5F20001709A /* Acao.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D521AB0F5F20001709A /* Acao.m */; };
+		CFEC2D561AB0F6D50001709A /* Objeto.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D551AB0F6D50001709A /* Objeto.m */; };
+		CFEC2D5C1AB0F8CC0001709A /* CenaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D5B1AB0F8CC0001709A /* CenaItem.m */; };
+		CFEC2D5F1AB0F95C0001709A /* Personagem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D5E1AB0F95C0001709A /* Personagem.m */; };
+		CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D611AB0FBC30001709A /* ValorLevel.m */; };
+		CFEC2D651AB0FEF60001709A /* Ataque.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D641AB0FEF60001709A /* Ataque.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,22 @@
 		CF5DC9471AB0EF6D00760540 /* TrabalhoRPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrabalhoRPGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5DC94C1AB0EF6D00760540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF5DC94D1AB0EF6D00760540 /* TrabalhoRPGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrabalhoRPGTests.m; sourceTree = "<group>"; };
+		CFEC2D4B1AB0F1C50001709A /* Cenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cenario.h; path = Classes/Cenario.h; sourceTree = "<group>"; };
+		CFEC2D4C1AB0F1C50001709A /* Cenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cenario.m; path = Classes/Cenario.m; sourceTree = "<group>"; };
+		CFEC2D4E1AB0F4E40001709A /* Transicao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transicao.h; path = Classes/Transicao.h; sourceTree = "<group>"; };
+		CFEC2D4F1AB0F4E40001709A /* Transicao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transicao.m; path = Classes/Transicao.m; sourceTree = "<group>"; };
+		CFEC2D511AB0F5F20001709A /* Acao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Acao.h; path = Classes/Acao.h; sourceTree = "<group>"; };
+		CFEC2D521AB0F5F20001709A /* Acao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Acao.m; path = Classes/Acao.m; sourceTree = "<group>"; };
+		CFEC2D541AB0F6D50001709A /* Objeto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Objeto.h; path = Classes/Objeto.h; sourceTree = "<group>"; };
+		CFEC2D551AB0F6D50001709A /* Objeto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Objeto.m; path = Classes/Objeto.m; sourceTree = "<group>"; };
+		CFEC2D5A1AB0F8CC0001709A /* CenaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CenaItem.h; path = Classes/CenaItem.h; sourceTree = "<group>"; };
+		CFEC2D5B1AB0F8CC0001709A /* CenaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CenaItem.m; path = Classes/CenaItem.m; sourceTree = "<group>"; };
+		CFEC2D5D1AB0F95C0001709A /* Personagem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Personagem.h; path = Classes/Personagem.h; sourceTree = "<group>"; };
+		CFEC2D5E1AB0F95C0001709A /* Personagem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Personagem.m; path = Classes/Personagem.m; sourceTree = "<group>"; };
+		CFEC2D601AB0FBC30001709A /* ValorLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ValorLevel.h; path = Classes/ValorLevel.h; sourceTree = "<group>"; };
+		CFEC2D611AB0FBC30001709A /* ValorLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValorLevel.m; path = Classes/ValorLevel.m; sourceTree = "<group>"; };
+		CFEC2D631AB0FEF60001709A /* Ataque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ataque.h; path = Classes/Ataque.h; sourceTree = "<group>"; };
+		CFEC2D641AB0FEF60001709A /* Ataque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ataque.m; path = Classes/Ataque.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,7 @@
 		CF5DC9301AB0EF6D00760540 /* TrabalhoRPG */ = {
 			isa = PBXGroup;
 			children = (
+				CFEC2D4A1AB0F13B0001709A /* Classes */,
 				CF5DC9351AB0EF6D00760540 /* AppDelegate.h */,
 				CF5DC9361AB0EF6D00760540 /* AppDelegate.m */,
 				CF5DC9381AB0EF6D00760540 /* ViewController.h */,
@@ -117,6 +142,29 @@
 				CF5DC94C1AB0EF6D00760540 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFEC2D4A1AB0F13B0001709A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CFEC2D4B1AB0F1C50001709A /* Cenario.h */,
+				CFEC2D4C1AB0F1C50001709A /* Cenario.m */,
+				CFEC2D4E1AB0F4E40001709A /* Transicao.h */,
+				CFEC2D4F1AB0F4E40001709A /* Transicao.m */,
+				CFEC2D511AB0F5F20001709A /* Acao.h */,
+				CFEC2D521AB0F5F20001709A /* Acao.m */,
+				CFEC2D541AB0F6D50001709A /* Objeto.h */,
+				CFEC2D551AB0F6D50001709A /* Objeto.m */,
+				CFEC2D5A1AB0F8CC0001709A /* CenaItem.h */,
+				CFEC2D5B1AB0F8CC0001709A /* CenaItem.m */,
+				CFEC2D5D1AB0F95C0001709A /* Personagem.h */,
+				CFEC2D5E1AB0F95C0001709A /* Personagem.m */,
+				CFEC2D601AB0FBC30001709A /* ValorLevel.h */,
+				CFEC2D611AB0FBC30001709A /* ValorLevel.m */,
+				CFEC2D631AB0FEF60001709A /* Ataque.h */,
+				CFEC2D641AB0FEF60001709A /* Ataque.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEC2D4D1AB0F1C50001709A /* Cenario.m in Sources */,
+				CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */,
 				CF5DC93A1AB0EF6D00760540 /* ViewController.m in Sources */,
+				CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */,
+				CFEC2D5C1AB0F8CC0001709A /* CenaItem.m in Sources */,
+				CFEC2D561AB0F6D50001709A /* Objeto.m in Sources */,
+				CFEC2D531AB0F5F20001709A /* Acao.m in Sources */,
+				CFEC2D5F1AB0F95C0001709A /* Personagem.m in Sources */,
+				CFEC2D651AB0FEF60001709A /* Ataque.m in Sources */,
 				CF5DC9371AB0EF6D00760540 /* AppDelegate.m in Sources */,
 				CF5DC9341AB0EF6D00760540 /* main.m in Sources */,
 			);
@@ -414,6 +470,7 @@
 				CF5DC9531AB0EF6D00760540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5DC9541AB0EF6D00760540 /* Build configuration list for PBXNativeTarget "TrabalhoRPGTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +479,7 @@
 				CF5DC9561AB0EF6D00760540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
