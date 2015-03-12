@@ -1,5 +1,5 @@
 //
-//  Inimigo.h
+//  Inventorio.h
 //  TrabalhoRPG
 //
 //  Created by João Vitor P. Moraes on 3/11/15.
@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "Ataque.h"
+#import "Item.h"
 
-@interface Personagem : NSObject
+@interface Inventorio : NSObject
 
-@property NSString* nome;
-@property NSString* imagem;
-@property NSArray* ataques;
+@property NSArray* items;
 
-@property int level;
++ (id) inventorioUnico;
 
 @end

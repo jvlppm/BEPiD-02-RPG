@@ -13,7 +13,7 @@
 @interface Objeto : NSObject
 
 @property NSString* imagem;
-@property CGRect* posicao;
+@property CGPoint posicao;
 @property Transicao* transicao;
 
 @end

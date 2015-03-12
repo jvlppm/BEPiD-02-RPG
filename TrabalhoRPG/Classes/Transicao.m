@@ -19,4 +19,13 @@
     return self;
 }
 
+- (id) initToItem: (int) item {
+    self = [super init];
+    if (self) {
+        _numero = item;
+        _tipo = ParaCenaItem;
+    }
+    return self;
+}
+
 @end

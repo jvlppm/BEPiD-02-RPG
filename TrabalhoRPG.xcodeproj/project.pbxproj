@@ -23,6 +23,8 @@
 		CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D611AB0FBC30001709A /* ValorLevel.m */; };
 		CFEC2D651AB0FEF60001709A /* Ataque.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D641AB0FEF60001709A /* Ataque.m */; };
 		CFEC2D681AB106D10001709A /* Mundo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D671AB106D10001709A /* Mundo.m */; };
+		CFEC2D6B1AB11DF60001709A /* Inventorio.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D6A1AB11DF60001709A /* Inventorio.m */; };
+		CFEC2D6E1AB11E730001709A /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D6D1AB11E730001709A /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		CFEC2D641AB0FEF60001709A /* Ataque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ataque.m; path = Classes/Ataque.m; sourceTree = "<group>"; };
 		CFEC2D661AB106D10001709A /* Mundo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mundo.h; path = Classes/Mundo.h; sourceTree = "<group>"; };
 		CFEC2D671AB106D10001709A /* Mundo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mundo.m; path = Classes/Mundo.m; sourceTree = "<group>"; };
+		CFEC2D691AB11DF60001709A /* Inventorio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inventorio.h; path = Classes/Inventorio.h; sourceTree = "<group>"; };
+		CFEC2D6A1AB11DF60001709A /* Inventorio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Inventorio.m; path = Classes/Inventorio.m; sourceTree = "<group>"; };
+		CFEC2D6C1AB11E730001709A /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Classes/Item.h; sourceTree = "<group>"; };
+		CFEC2D6D1AB11E730001709A /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Classes/Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,10 @@
 				CFEC2D641AB0FEF60001709A /* Ataque.m */,
 				CFEC2D661AB106D10001709A /* Mundo.h */,
 				CFEC2D671AB106D10001709A /* Mundo.m */,
+				CFEC2D691AB11DF60001709A /* Inventorio.h */,
+				CFEC2D6A1AB11DF60001709A /* Inventorio.m */,
+				CFEC2D6C1AB11E730001709A /* Item.h */,
+				CFEC2D6D1AB11E730001709A /* Item.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -276,6 +286,7 @@
 				CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */,
 				CF5DC93A1AB0EF6D00760540 /* ViewController.m in Sources */,
 				CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */,
+				CFEC2D6B1AB11DF60001709A /* Inventorio.m in Sources */,
 				CFEC2D5C1AB0F8CC0001709A /* CenaItem.m in Sources */,
 				CFEC2D561AB0F6D50001709A /* Objeto.m in Sources */,
 				CFEC2D531AB0F5F20001709A /* Acao.m in Sources */,
@@ -283,6 +294,7 @@
 				CFEC2D651AB0FEF60001709A /* Ataque.m in Sources */,
 				CFEC2D681AB106D10001709A /* Mundo.m in Sources */,
 				CF5DC9371AB0EF6D00760540 /* AppDelegate.m in Sources */,
+				CFEC2D6E1AB11E730001709A /* Item.m in Sources */,
 				CF5DC9341AB0EF6D00760540 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

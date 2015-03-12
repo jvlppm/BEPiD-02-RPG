@@ -1,5 +1,5 @@
 //
-//  Inimigo.h
+//  Item.h
 //  TrabalhoRPG
 //
 //  Created by João Vitor P. Moraes on 3/11/15.
@@ -7,14 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#include "Ataque.h"
 
-@interface Personagem : NSObject
+@interface Item : NSObject
 
-@property NSString* nome;
-@property NSString* imagem;
-@property NSArray* ataques;
-
-@property int level;
+@property int codigo;
+@property int quantidade;
 
 @end

@@ -21,5 +21,6 @@ typedef enum : NSUInteger {
 @property NSString* mensagemRequisito;
 
 - (id) initToScene: (int) number;
+- (id) initToItem: (int) item;
 
 @end

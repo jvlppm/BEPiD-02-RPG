@@ -6,8 +6,9 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 #import "Cenario.h"
-//#import "Acao.h"
 
 @implementation Cenario
 
@@ -22,6 +23,31 @@
 
 - (void)adicionaAcao: (Acao*) acao {
     [_acoes addObject:acao];
+}
+
+- (void)adicionaTransicao: (NSString*) nome cena: (int) numero {
+    [_acoes addObject: [[Transicao alloc] initToScene: numero]];
+}
+
+- (void) adicionaObjeto: (NSString*) nome x: (int) posX y: (int) posY to: (Transicao*) transicao {
+    Objeto* obj = [[Objeto alloc] init];
+    obj.posicao = CGPointMake(posX, posY);
+    obj.imagem = nome;
+    obj.transicao = transicao;
+}
+
+- (void) adicionaObjeto: (NSString*) nome x: (int) posX y: (int) posY codigoItem: (int) code {
+    Objeto* obj = [[Objeto alloc] init];
+    obj.posicao = CGPointMake(posX, posY);
+    obj.imagem = nome;
+    obj.transicao = [[Transicao alloc] initToItem:code];
+}
+
+- (void) adicionaObjeto: (NSString*) nome x: (int) posX y: (int) posY cena: (int) scene {
+    Objeto* obj = [[Objeto alloc] init];
+    obj.posicao = CGPointMake(posX, posY);
+    obj.imagem = nome;
+    obj.transicao = [[Transicao alloc] initToScene:scene];
 }
 
 @end
