@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Acao.h"
 
 @interface Cenario : NSObject
 
 @property NSString* imagem;
 @property NSString* nome;
-@property NSArray* acoes;
-@property NSArray* objetos;
+@property NSMutableArray* acoes;
+@property NSMutableArray* objetos;
+
+- (id)initWithImage: (NSString*) image andName: (NSString*) name;
+- (void)adicionaAcao: (Acao*) acao;
 
 @end

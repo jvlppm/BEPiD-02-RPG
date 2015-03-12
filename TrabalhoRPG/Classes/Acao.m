@@ -10,4 +10,13 @@
 
 @implementation Acao
 
+- (id) initNamed: (NSString*) name to: (Transicao*) transition {
+    self = [super init];
+    if (self) {
+        _nome = name;
+        _transicao = transition;
+    }
+    return self;
+}
+
 @end

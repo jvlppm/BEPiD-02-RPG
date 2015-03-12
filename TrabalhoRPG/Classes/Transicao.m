@@ -10,4 +10,13 @@
 
 @implementation Transicao
 
+- (id) initToScene: (int) number {
+    self = [super init];
+    if (self) {
+        _numero = number;
+        _tipo = ParaCenario;
+    }
+    return self;
+}
+
 @end

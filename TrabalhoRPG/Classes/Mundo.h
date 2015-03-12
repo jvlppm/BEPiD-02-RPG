@@ -1,5 +1,5 @@
 //
-//  Acao.h
+//  Mundo.h
 //  TrabalhoRPG
 //
 //  Created by João Vitor P. Moraes on 3/11/15.
@@ -7,13 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Transicao.h"
 
-@interface Acao : NSObject
+@interface Mundo : NSObject
 
-@property NSString* nome;
-@property Transicao* transicao;
-
-- (id) initNamed: (NSString*) name to: (Transicao*) transition;
++ (id) mundoUnico;
 
 @end

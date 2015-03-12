@@ -22,6 +22,7 @@
 		CFEC2D5F1AB0F95C0001709A /* Personagem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D5E1AB0F95C0001709A /* Personagem.m */; };
 		CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D611AB0FBC30001709A /* ValorLevel.m */; };
 		CFEC2D651AB0FEF60001709A /* Ataque.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D641AB0FEF60001709A /* Ataque.m */; };
+		CFEC2D681AB106D10001709A /* Mundo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D671AB106D10001709A /* Mundo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		CFEC2D611AB0FBC30001709A /* ValorLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ValorLevel.m; path = Classes/ValorLevel.m; sourceTree = "<group>"; };
 		CFEC2D631AB0FEF60001709A /* Ataque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ataque.h; path = Classes/Ataque.h; sourceTree = "<group>"; };
 		CFEC2D641AB0FEF60001709A /* Ataque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ataque.m; path = Classes/Ataque.m; sourceTree = "<group>"; };
+		CFEC2D661AB106D10001709A /* Mundo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mundo.h; path = Classes/Mundo.h; sourceTree = "<group>"; };
+		CFEC2D671AB106D10001709A /* Mundo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mundo.m; path = Classes/Mundo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				CFEC2D611AB0FBC30001709A /* ValorLevel.m */,
 				CFEC2D631AB0FEF60001709A /* Ataque.h */,
 				CFEC2D641AB0FEF60001709A /* Ataque.m */,
+				CFEC2D661AB106D10001709A /* Mundo.h */,
+				CFEC2D671AB106D10001709A /* Mundo.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				CFEC2D531AB0F5F20001709A /* Acao.m in Sources */,
 				CFEC2D5F1AB0F95C0001709A /* Personagem.m in Sources */,
 				CFEC2D651AB0FEF60001709A /* Ataque.m in Sources */,
+				CFEC2D681AB106D10001709A /* Mundo.m in Sources */,
 				CF5DC9371AB0EF6D00760540 /* AppDelegate.m in Sources */,
 				CF5DC9341AB0EF6D00760540 /* main.m in Sources */,
 			);

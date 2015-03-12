@@ -7,7 +7,21 @@
 //
 
 #import "Cenario.h"
+//#import "Acao.h"
 
 @implementation Cenario
+
+- (id)initWithImage: (NSString*) image andName: (NSString*) name {
+    self = [super init];
+    if (self) {
+        _imagem = image;
+        _nome = name;
+    }
+    return self;
+}
+
+- (void)adicionaAcao: (Acao*) acao {
+    [_acoes addObject:acao];
+}
 
 @end

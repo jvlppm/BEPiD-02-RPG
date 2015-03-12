@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum : NSUInteger {
+    ParaCenario,
+    ParaCenaItem,
+} TipoTransicao;
+
 @interface Transicao : NSObject
 
-@property int tipo;
+@property TipoTransicao tipo;
 @property int numero;
 @property int codigoItemRequisito;
 @property NSString* mensagemRequisito;
+
+- (id) initToScene: (int) number;
 
 @end
