@@ -14,6 +14,8 @@
 
 @interface Objeto : NSObject
 
++ (Objeto*) fromDictionary: (NSDictionary*) data;
+
 @property NSString* imagem;
 @property CGPoint posicao;
 @property Transicao* transicao;

@@ -12,6 +12,27 @@
 
 @implementation Cenario
 
+- (id)initFromJsonFilePath: (NSString*) path {
+    self = [super init];
+    if (self) {
+        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        _imagem = dictionary[@"imagem"];
+        _nome = dictionary[@"nome"];
+        _descricao = dictionary[@"descricao"];
+
+        NSMutableArray* acoes = [[NSMutableArray alloc] init];
+        for (id data in dictionary[@"acoes"])
+            [acoes addObject: [Transicao fromDictionary: data]];
+        _acoes = acoes;
+
+        NSMutableArray* objetos = [[NSMutableArray alloc] init];
+        for (id data in dictionary[@"objetos"])
+            [objetos addObject: [Objeto fromDictionary: data]];
+        _objetos = objetos;
+    }
+    return self;
+}
+
 - (id)initWithImage: (NSString*) image andName: (NSString*) name {
     self = [super init];
     if (self) {

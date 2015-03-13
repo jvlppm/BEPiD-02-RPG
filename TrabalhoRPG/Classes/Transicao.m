@@ -10,6 +10,17 @@
 
 @implementation Transicao
 
++ (Transicao*) fromDictionary: (NSDictionary*) data {
+    if ([data[@"tipo"] isEqualToString: @"cena"])
+        return [[Transicao alloc] initToScene: object[@"numero"]];
+
+    if ([object[@"tipo"] isEqualToString: @"item"])
+        return [[Transicao alloc] initToItem: object[@"numero"]];
+
+    NSLog([NSString stringWithFormat:@"Tipo de transicao desconhecido: %@", object[@"tipo"]]);
+    return nil;
+}
+
 - (id) initToScene: (int) number {
     self = [super init];
     if (self) {

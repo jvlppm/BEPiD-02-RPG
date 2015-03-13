@@ -20,6 +20,8 @@
 @property NSMutableArray* acoes;
 @property NSMutableArray* objetos;
 
+- (id)initFromJsonFilePath: (NSString*) path;
+
 - (id)initWithImage: (NSString*) image andName: (NSString*) name;
 - (void)adicionaAcao: (Acao*) acao;
 - (void)adicionaTransicao: (NSString*) nome cena: (int) numero;

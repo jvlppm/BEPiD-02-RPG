@@ -13,13 +13,13 @@
     Cenario* cenas[2];
 }
 
-+ (id) mundoUnico {
-    static Mundo* unico = nil;
++ (id) unico {
+    static Mundo* singleton = nil;
     @synchronized(self) {
-        if (unico == nil)
-            unico = [[self alloc] initWorld];
+        if (singleton == nil)
+            singleton = [[self alloc] initWorld];
     }
-    return unico;
+    return singleton;
 }
 
 - (instancetype)initWorld

@@ -1,0 +1,22 @@
+{
+	"imagem": "Cena00.jpg",
+	"nome": "Cena inicial",
+	"descricao": "Descrição da cena",
+	"acoes": [
+		{
+			"tipo": "cena",
+			"numero": 1
+		}
+	],
+	"objetos": [
+		{
+			"x": 10,
+			"y": 10,
+			"imagem": "Item00.jpg",
+			"transicao": {
+				"tipo": "cena",
+				"numero": 2
+			}
+		}
+	]
+}

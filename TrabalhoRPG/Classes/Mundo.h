@@ -12,6 +12,6 @@
 
 @interface Mundo : NSObject
 
-+ (id) mundoUnico;
++ (id) unico;
 
 @end

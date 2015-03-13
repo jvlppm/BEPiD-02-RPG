@@ -22,6 +22,8 @@ typedef enum : NSUInteger {
 @property int codigoItemRequisito;
 @property NSString* mensagemRequisito;
 
++ (Transicao*) fromDictionary: (NSDictionary*) data;
+
 - (id) initToScene: (int) number;
 - (id) initToItem: (int) item;
 
