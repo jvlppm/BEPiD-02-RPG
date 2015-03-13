@@ -14,9 +14,12 @@
 		CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5DC93E1AB0EF6D00760540 /* Images.xcassets */; };
 		CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5DC9401AB0EF6D00760540 /* LaunchScreen.xib */; };
 		CF5DC94E1AB0EF6D00760540 /* TrabalhoRPGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5DC94D1AB0EF6D00760540 /* TrabalhoRPGTests.m */; };
-		CF6097D91AB2419F007155C2 /* Cena00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF6097D81AB2419F007155C2 /* Cena00.jpg */; };
+		CF6097D91AB2419F007155C2 /* Cena0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF6097D81AB2419F007155C2 /* Cena0.jpg */; };
 		CF6097E21AB2446C007155C2 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6097E11AB2446C007155C2 /* Status.m */; };
 		CF6097E81AB255BC007155C2 /* CenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6097E71AB255BC007155C2 /* CenaViewController.m */; };
+		CFE4F6D11AB392A4003D3DB3 /* Json.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE4F6D01AB392A4003D3DB3 /* Json.m */; };
+		CFE4F6D41AB3965E003D3DB3 /* Cena0.json in Resources */ = {isa = PBXBuildFile; fileRef = CFE4F6D31AB3965E003D3DB3 /* Cena0.json */; };
+		CFE4F6D71AB39955003D3DB3 /* EstadoJogo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE4F6D61AB39955003D3DB3 /* EstadoJogo.m */; };
 		CFEC2D4D1AB0F1C50001709A /* Cenario.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D4C1AB0F1C50001709A /* Cenario.m */; };
 		CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D4F1AB0F4E40001709A /* Transicao.m */; };
 		CFEC2D531AB0F5F20001709A /* Acao.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D521AB0F5F20001709A /* Acao.m */; };
@@ -54,11 +57,16 @@
 		CF5DC9471AB0EF6D00760540 /* TrabalhoRPGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrabalhoRPGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5DC94C1AB0EF6D00760540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF5DC94D1AB0EF6D00760540 /* TrabalhoRPGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrabalhoRPGTests.m; sourceTree = "<group>"; };
-		CF6097D81AB2419F007155C2 /* Cena00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cena00.jpg; sourceTree = "<group>"; };
+		CF6097D81AB2419F007155C2 /* Cena0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cena0.jpg; sourceTree = "<group>"; };
 		CF6097E01AB2446C007155C2 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Status.h; path = Classes/Status.h; sourceTree = "<group>"; };
 		CF6097E11AB2446C007155C2 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Status.m; path = Classes/Status.m; sourceTree = "<group>"; };
 		CF6097E61AB255BC007155C2 /* CenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenaViewController.h; sourceTree = "<group>"; };
 		CF6097E71AB255BC007155C2 /* CenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenaViewController.m; sourceTree = "<group>"; };
+		CFE4F6CF1AB392A4003D3DB3 /* Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Json.h; path = Classes/Json.h; sourceTree = "<group>"; };
+		CFE4F6D01AB392A4003D3DB3 /* Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Json.m; path = Classes/Json.m; sourceTree = "<group>"; };
+		CFE4F6D31AB3965E003D3DB3 /* Cena0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cena0.json; path = Cenas/Cena0.json; sourceTree = "<group>"; };
+		CFE4F6D51AB39955003D3DB3 /* EstadoJogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EstadoJogo.h; path = Classes/EstadoJogo.h; sourceTree = "<group>"; };
+		CFE4F6D61AB39955003D3DB3 /* EstadoJogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EstadoJogo.m; path = Classes/EstadoJogo.m; sourceTree = "<group>"; };
 		CFEC2D4B1AB0F1C50001709A /* Cenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cenario.h; path = Classes/Cenario.h; sourceTree = "<group>"; };
 		CFEC2D4C1AB0F1C50001709A /* Cenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cenario.m; path = Classes/Cenario.m; sourceTree = "<group>"; };
 		CFEC2D4E1AB0F4E40001709A /* Transicao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transicao.h; path = Classes/Transicao.h; sourceTree = "<group>"; };
@@ -122,7 +130,7 @@
 		CF5DC9301AB0EF6D00760540 /* TrabalhoRPG */ = {
 			isa = PBXGroup;
 			children = (
-				CF6097DA1AB241B4007155C2 /* Imagens */,
+				CFE4F6D21AB39649003D3DB3 /* Cenas */,
 				CFEC2D4A1AB0F13B0001709A /* Classes */,
 				CF5DC9351AB0EF6D00760540 /* AppDelegate.h */,
 				CF5DC9361AB0EF6D00760540 /* AppDelegate.m */,
@@ -162,22 +170,6 @@
 				CF5DC94C1AB0EF6D00760540 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CF6097DA1AB241B4007155C2 /* Imagens */ = {
-			isa = PBXGroup;
-			children = (
-				CF6097DB1AB241CA007155C2 /* Cenas */,
-			);
-			name = Imagens;
-			sourceTree = "<group>";
-		};
-		CF6097DB1AB241CA007155C2 /* Cenas */ = {
-			isa = PBXGroup;
-			children = (
-				CF6097D81AB2419F007155C2 /* Cena00.jpg */,
-			);
-			name = Cenas;
 			sourceTree = "<group>";
 		};
 		CF6097EC1AB265B1007155C2 /* Inventorio */ = {
@@ -225,12 +217,25 @@
 			name = Batalha;
 			sourceTree = "<group>";
 		};
+		CFE4F6D21AB39649003D3DB3 /* Cenas */ = {
+			isa = PBXGroup;
+			children = (
+				CFE4F6D31AB3965E003D3DB3 /* Cena0.json */,
+				CF6097D81AB2419F007155C2 /* Cena0.jpg */,
+			);
+			name = Cenas;
+			sourceTree = "<group>";
+		};
 		CFEC2D4A1AB0F13B0001709A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				CF6097ED1AB26627007155C2 /* Cenario */,
 				CF6097EE1AB26744007155C2 /* Batalha */,
 				CF6097EC1AB265B1007155C2 /* Inventorio */,
+				CFE4F6CF1AB392A4003D3DB3 /* Json.h */,
+				CFE4F6D01AB392A4003D3DB3 /* Json.m */,
+				CFE4F6D51AB39955003D3DB3 /* EstadoJogo.h */,
+				CFE4F6D61AB39955003D3DB3 /* EstadoJogo.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -316,7 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF5DC93D1AB0EF6D00760540 /* Main.storyboard in Resources */,
-				CF6097D91AB2419F007155C2 /* Cena00.jpg in Resources */,
+				CF6097D91AB2419F007155C2 /* Cena0.jpg in Resources */,
+				CFE4F6D41AB3965E003D3DB3 /* Cena0.json in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
 			);
@@ -337,10 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFEC2D4D1AB0F1C50001709A /* Cenario.m in Sources */,
+				CFE4F6D11AB392A4003D3DB3 /* Json.m in Sources */,
 				CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */,
 				CF5DC93A1AB0EF6D00760540 /* ViewController.m in Sources */,
 				CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */,
 				CFEC2D6B1AB11DF60001709A /* Inventorio.m in Sources */,
+				CFE4F6D71AB39955003D3DB3 /* EstadoJogo.m in Sources */,
 				CF6097E81AB255BC007155C2 /* CenaViewController.m in Sources */,
 				CFEC2D5C1AB0F8CC0001709A /* Item.m in Sources */,
 				CFEC2D561AB0F6D50001709A /* Objeto.m in Sources */,

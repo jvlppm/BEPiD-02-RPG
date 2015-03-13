@@ -20,7 +20,7 @@
 @property NSMutableArray* acoes;
 @property NSMutableArray* objetos;
 
-- (id)initFromJsonFilePath: (NSString*) path;
++ (id)fromJsonFile: (NSString*) file;
 
 - (id)initWithImage: (NSString*) image andName: (NSString*) name;
 - (void)adicionaAcao: (Acao*) acao;

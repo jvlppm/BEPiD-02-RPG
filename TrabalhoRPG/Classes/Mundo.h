@@ -12,6 +12,8 @@
 
 @interface Mundo : NSObject
 
+@property NSArray* cenas;
+
 + (id) unico;
 
 @end

@@ -10,7 +10,6 @@
 #import "Cenario.h"
 
 @implementation Mundo {
-    Cenario* cenas[2];
 }
 
 + (id) unico {
@@ -26,8 +25,15 @@
 {
     self = [super init];
     if (self) {
-        cenas[0] = [Mundo cenaInicial];
-        cenas[1] = [Mundo cena01];
+        NSMutableArray* loadCenas = [[NSMutableArray alloc] init];
+        for(int i = 0;;i++) {
+            NSString* arquivo = [NSString stringWithFormat:@"Cena%d", i];
+            Cenario* cena = [Cenario fromJsonFile:arquivo];
+            if (!cena)
+                break;
+            [loadCenas addObject:cena];
+        }
+        _cenas = loadCenas;
     }
     return self;
 }

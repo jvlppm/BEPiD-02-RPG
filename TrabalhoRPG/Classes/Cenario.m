@@ -9,28 +9,32 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import "Cenario.h"
+#include "Json.h"
 
 @implementation Cenario
 
-- (id)initFromJsonFilePath: (NSString*) path {
-    self = [super init];
-    if (self) {
-        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-        _imagem = dictionary[@"imagem"];
-        _nome = dictionary[@"nome"];
-        _descricao = dictionary[@"descricao"];
++ (id)fromJsonFile: (NSString*) file {
+    NSDictionary* dictionary = [Json fromFile: file];
+    if (dictionary == nil)
+        return nil;
+    
+    Cenario* cena = [[Cenario alloc] init];
+    if (cena) {
+        cena.imagem = dictionary[@"imagem"];
+        cena.nome = dictionary[@"nome"];
+        cena.descricao = dictionary[@"descricao"];
 
         NSMutableArray* acoes = [[NSMutableArray alloc] init];
         for (id data in dictionary[@"acoes"])
             [acoes addObject: [Transicao fromDictionary: data]];
-        _acoes = acoes;
+        cena.acoes = acoes;
 
         NSMutableArray* objetos = [[NSMutableArray alloc] init];
         for (id data in dictionary[@"objetos"])
             [objetos addObject: [Objeto fromDictionary: data]];
-        _objetos = objetos;
+        cena.objetos = objetos;
     }
-    return self;
+    return cena;
 }
 
 - (id)initWithImage: (NSString*) image andName: (NSString*) name {

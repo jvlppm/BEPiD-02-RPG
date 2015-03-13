@@ -12,12 +12,12 @@
 
 + (Transicao*) fromDictionary: (NSDictionary*) data {
     if ([data[@"tipo"] isEqualToString: @"cena"])
-        return [[Transicao alloc] initToScene: object[@"numero"]];
+        return [[Transicao alloc] initToScene: [data[@"numero"] floatValue]];
 
-    if ([object[@"tipo"] isEqualToString: @"item"])
-        return [[Transicao alloc] initToItem: object[@"numero"]];
+    if ([data[@"tipo"] isEqualToString: @"item"])
+        return [[Transicao alloc] initToItem: [data[@"numero"] floatValue]];
 
-    NSLog([NSString stringWithFormat:@"Tipo de transicao desconhecido: %@", object[@"tipo"]]);
+    NSLog(@"%@", [NSString stringWithFormat:@"Tipo de transicao desconhecido: %@", data[@"tipo"]]);
     return nil;
 }
 

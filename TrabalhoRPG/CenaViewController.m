@@ -7,6 +7,8 @@
 //
 
 #import "CenaViewController.h"
+#include "Cenario.h"
+#include "EstadoJogo.h"
 
 @interface CenaViewController ()
 
@@ -21,7 +23,11 @@
 }
 
 - (void) refresh {
-    
+    EstadoJogo* estado = [EstadoJogo unico];
+    Cenario* atual = estado.cenaAtual;
+    if (atual) {
+        
+    }
 }
 
 @end
