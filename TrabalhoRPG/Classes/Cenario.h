@@ -10,6 +10,8 @@
 #import "Objeto.h"
 #import <CoreGraphics/CoreGraphics.h>
 
+// Conteudo para montar uma cena na tela
+
 @interface Cenario : NSObject
 
 @property NSString* imagem;

@@ -10,7 +10,7 @@
 #import "Cenario.h"
 
 @implementation Mundo {
-    Cenario* cenas[1];
+    Cenario* cenas[2];
 }
 
 + (id) mundoUnico {
@@ -33,7 +33,7 @@
 }
 
 + (Cenario*) cenaInicial {
-    Cenario* cena = [[Cenario alloc] initWithImage: @"CenaInicial.png" andName: @"Cena inicial"];
+    Cenario* cena = [[Cenario alloc] initWithImage: @"Cena00.png" andName: @"Cena 00"];
     cena.descricao = @"Descricao cena 00";
     [cena adicionaTransicao:@"Entrar porta" cena:1];
     return cena;

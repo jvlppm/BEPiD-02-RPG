@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+// Inventório do personagem principal
+
 #import <Foundation/Foundation.h>
 #import "Item.h"
 

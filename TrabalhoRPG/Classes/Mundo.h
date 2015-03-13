@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+// Informações sobre o mundo, com cenas.
+
 #import <Foundation/Foundation.h>
 
 @interface Mundo : NSObject

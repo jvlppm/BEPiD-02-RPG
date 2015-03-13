@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+// Objeto Gráfico (clicável) para ser incluído em uma cena.
+
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #include "Transicao.h"

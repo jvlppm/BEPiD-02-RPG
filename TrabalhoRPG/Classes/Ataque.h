@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+// Descrição de um ataque para batalha
+
 #import <Foundation/Foundation.h>
 #include "ValorLevel.h"
 

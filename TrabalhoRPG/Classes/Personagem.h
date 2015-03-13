@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+// Personagem / Inimigo para batalhas
+
 #import <Foundation/Foundation.h>
 #include "Ataque.h"
 

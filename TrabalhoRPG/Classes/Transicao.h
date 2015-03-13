@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+// Informações para uma transição de tela
+
 typedef enum : NSUInteger {
     ParaCenario,
     ParaCenaItem,

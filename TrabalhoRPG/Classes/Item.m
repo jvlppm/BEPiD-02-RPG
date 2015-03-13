@@ -1,5 +1,5 @@
 //
-//  Item.m
+//  CenaItem.m
 //  TrabalhoRPG
 //
 //  Created by João Vitor P. Moraes on 3/11/15.

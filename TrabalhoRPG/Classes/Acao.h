@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+// Ação para ser exibida em modo Texto (Botão na cena)
+
 #import <Foundation/Foundation.h>
 #import "Transicao.h"
 
