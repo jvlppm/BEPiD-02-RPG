@@ -40,6 +40,7 @@
         self.tvDescricaoCena.text = atual.descricao;
         self.imvCena.image = [UIImage imageNamed:atual.imagem];
         opcoes = atual.acoes;
+        [self.tableAcoes reloadData];
     }
 }
 
@@ -67,7 +68,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int row = indexPath.row;
+    NSInteger row = indexPath.row;
     Acao* opcao = opcoes[row];
     EstadoJogo* estado = [EstadoJogo unico];
     Mundo* mundo = [Mundo unico];
