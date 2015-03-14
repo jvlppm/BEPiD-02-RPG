@@ -10,6 +10,13 @@
 
 @implementation Acao
 
++ (Acao*) fromDictionary: (NSDictionary*) data {
+    Acao* acao = [[Acao alloc] init];
+    acao.nome = data[@"nome"];
+    acao.transicao = [Transicao fromDictionary:data];
+    return acao;
+}
+
 - (id) initNamed: (NSString*) name to: (Transicao*) transition {
     self = [super init];
     if (self) {

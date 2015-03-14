@@ -13,6 +13,8 @@
 
 @interface Acao : NSObject
 
++ (Acao*) fromDictionary: (NSDictionary*) data;
+
 @property NSString* nome;
 @property Transicao* transicao;
 

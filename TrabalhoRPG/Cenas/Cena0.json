@@ -2,11 +2,13 @@
 	"imagem": "Cena0.jpg",
 	"nome": "Cena inicial",
 	"descricao": "Descrição da cena",
+    "chanceBatalha": 0.3,
 	"acoes": [
 		{
+            "nome": "Ação",
 			"tipo": "cena",
 			"numero": 1
-		}
+		},
 	],
 	"objetos": [
 		{

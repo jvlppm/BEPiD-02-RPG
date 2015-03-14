@@ -20,6 +20,7 @@
 		CFE4F6D11AB392A4003D3DB3 /* Json.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE4F6D01AB392A4003D3DB3 /* Json.m */; };
 		CFE4F6D41AB3965E003D3DB3 /* Cena0.json in Resources */ = {isa = PBXBuildFile; fileRef = CFE4F6D31AB3965E003D3DB3 /* Cena0.json */; };
 		CFE4F6D71AB39955003D3DB3 /* EstadoJogo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE4F6D61AB39955003D3DB3 /* EstadoJogo.m */; };
+		CFE4F6D91AB3BAE6003D3DB3 /* Cena1.json in Resources */ = {isa = PBXBuildFile; fileRef = CFE4F6D81AB3BAE6003D3DB3 /* Cena1.json */; };
 		CFEC2D4D1AB0F1C50001709A /* Cenario.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D4C1AB0F1C50001709A /* Cenario.m */; };
 		CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D4F1AB0F4E40001709A /* Transicao.m */; };
 		CFEC2D531AB0F5F20001709A /* Acao.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D521AB0F5F20001709A /* Acao.m */; };
@@ -67,6 +68,7 @@
 		CFE4F6D31AB3965E003D3DB3 /* Cena0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cena0.json; path = Cenas/Cena0.json; sourceTree = "<group>"; };
 		CFE4F6D51AB39955003D3DB3 /* EstadoJogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EstadoJogo.h; path = Classes/EstadoJogo.h; sourceTree = "<group>"; };
 		CFE4F6D61AB39955003D3DB3 /* EstadoJogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EstadoJogo.m; path = Classes/EstadoJogo.m; sourceTree = "<group>"; };
+		CFE4F6D81AB3BAE6003D3DB3 /* Cena1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cena1.json; sourceTree = "<group>"; };
 		CFEC2D4B1AB0F1C50001709A /* Cenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cenario.h; path = Classes/Cenario.h; sourceTree = "<group>"; };
 		CFEC2D4C1AB0F1C50001709A /* Cenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cenario.m; path = Classes/Cenario.m; sourceTree = "<group>"; };
 		CFEC2D4E1AB0F4E40001709A /* Transicao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transicao.h; path = Classes/Transicao.h; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			children = (
 				CFE4F6D31AB3965E003D3DB3 /* Cena0.json */,
 				CF6097D81AB2419F007155C2 /* Cena0.jpg */,
+				CFE4F6D81AB3BAE6003D3DB3 /* Cena1.json */,
 			);
 			name = Cenas;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE4F6D91AB3BAE6003D3DB3 /* Cena1.json in Resources */,
 				CF5DC93D1AB0EF6D00760540 /* Main.storyboard in Resources */,
 				CF6097D91AB2419F007155C2 /* Cena0.jpg in Resources */,
 				CFE4F6D41AB3965E003D3DB3 /* Cena0.json in Resources */,

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CenaViewController : UIViewController
+@interface CenaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

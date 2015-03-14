@@ -23,10 +23,11 @@
         cena.imagem = dictionary[@"imagem"];
         cena.nome = dictionary[@"nome"];
         cena.descricao = dictionary[@"descricao"];
+        cena.chanceBatalha = [dictionary[@"chanceBatalha"] doubleValue];
 
         NSMutableArray* acoes = [[NSMutableArray alloc] init];
         for (id data in dictionary[@"acoes"])
-            [acoes addObject: [Transicao fromDictionary: data]];
+            [acoes addObject: [Acao fromDictionary: data]];
         cena.acoes = acoes;
 
         NSMutableArray* objetos = [[NSMutableArray alloc] init];

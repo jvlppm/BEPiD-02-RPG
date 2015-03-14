@@ -19,6 +19,7 @@
 @property NSString* descricao;
 @property NSMutableArray* acoes;
 @property NSMutableArray* objetos;
+@property double chanceBatalha;
 
 + (id)fromJsonFile: (NSString*) file;
 

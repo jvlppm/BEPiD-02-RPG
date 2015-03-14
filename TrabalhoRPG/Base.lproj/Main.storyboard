@@ -2,8 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -50,20 +50,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da cena" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeE-1T-90B">
-                                <rect key="frame" x="244" y="20" width="112" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da cena" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeE-1T-90B">
+                                <rect key="frame" x="16" y="20" width="568" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="2kW-xu-GeV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-c9-z7e">
-                                <rect key="frame" x="16" y="49" width="568" height="372"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Oye-c9-z7e" secondAttribute="height" multiplier="142:93" id="Rpk-Az-8Gc"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-c9-z7e">
+                                <rect key="frame" x="16" y="50" width="568" height="266"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Teste" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vmW-zR-2Ad">
-                                <rect key="frame" x="16" y="429" width="568" height="48"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vmW-zR-2Ad">
+                                <rect key="frame" x="16" y="324" width="568" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="a8P-3i-Fyr"/>
@@ -71,27 +72,60 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="C0u-Ce-IhV">
-                                <rect key="frame" x="16" y="485" width="568" height="95"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="C0u-Ce-IhV">
+                                <rect key="frame" x="16" y="380" width="568" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="csE-U9-Ac7"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Oye-c9-z7e" secondAttribute="centerX" id="0LO-fL-4rN"/>
                             <constraint firstItem="Vej-DH-rdb" firstAttribute="top" secondItem="C0u-Ce-IhV" secondAttribute="bottom" constant="20" id="BIa-Cr-1xE"/>
-                            <constraint firstItem="Oye-c9-z7e" firstAttribute="leading" secondItem="hfV-Wq-DZJ" secondAttribute="leadingMargin" id="E3y-sH-uw1"/>
+                            <constraint firstItem="Oye-c9-z7e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hfV-Wq-DZJ" secondAttribute="leadingMargin" id="E3y-sH-uw1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oye-c9-z7e" secondAttribute="trailing" id="Fez-nP-Fqx"/>
                             <constraint firstItem="vmW-zR-2Ad" firstAttribute="leading" secondItem="hfV-Wq-DZJ" secondAttribute="leadingMargin" id="IU3-di-QW7"/>
+                            <constraint firstItem="Oye-c9-z7e" firstAttribute="height" relation="lessThanOrEqual" secondItem="hfV-Wq-DZJ" secondAttribute="height" multiplier="0.4" id="Kel-kb-48Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZeE-1T-90B" secondAttribute="trailing" id="Mc9-es-6wg"/>
                             <constraint firstItem="C0u-Ce-IhV" firstAttribute="top" secondItem="vmW-zR-2Ad" secondAttribute="bottom" constant="8" id="MtS-Xy-dcI"/>
+                            <constraint firstItem="vmW-zR-2Ad" firstAttribute="top" secondItem="Oye-c9-z7e" secondAttribute="bottom" constant="8" id="Rv1-lV-yBQ"/>
                             <constraint firstItem="vmW-zR-2Ad" firstAttribute="trailing" secondItem="hfV-Wq-DZJ" secondAttribute="trailingMargin" id="UU0-je-IHE"/>
                             <constraint firstItem="Oye-c9-z7e" firstAttribute="top" secondItem="ZeE-1T-90B" secondAttribute="bottom" constant="8" id="Uiw-Nc-Wqq"/>
+                            <constraint firstItem="C0u-Ce-IhV" firstAttribute="top" secondItem="vmW-zR-2Ad" secondAttribute="bottom" constant="8" id="VHn-VN-KnZ"/>
+                            <constraint firstItem="ZeE-1T-90B" firstAttribute="leading" secondItem="hfV-Wq-DZJ" secondAttribute="leadingMargin" id="VcT-tL-esy"/>
                             <constraint firstItem="C0u-Ce-IhV" firstAttribute="leading" secondItem="hfV-Wq-DZJ" secondAttribute="leadingMargin" id="WUg-Ra-NcQ"/>
-                            <constraint firstItem="Oye-c9-z7e" firstAttribute="trailing" secondItem="hfV-Wq-DZJ" secondAttribute="trailingMargin" id="eDk-Go-yLq"/>
+                            <constraint firstItem="Oye-c9-z7e" firstAttribute="height" relation="greaterThanOrEqual" secondItem="hfV-Wq-DZJ" secondAttribute="height" multiplier="0.25" id="ZLz-Jx-UtB"/>
+                            <constraint firstItem="Oye-c9-z7e" firstAttribute="top" secondItem="ZeE-1T-90B" secondAttribute="bottom" constant="8" id="au1-rh-qVc"/>
+                            <constraint firstItem="Oye-c9-z7e" firstAttribute="leading" secondItem="hfV-Wq-DZJ" secondAttribute="leadingMargin" id="bvG-Fq-KbT"/>
+                            <constraint firstItem="Oye-c9-z7e" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="hfV-Wq-DZJ" secondAttribute="trailingMargin" id="eDk-Go-yLq"/>
+                            <constraint firstItem="vmW-zR-2Ad" firstAttribute="top" secondItem="Oye-c9-z7e" secondAttribute="bottom" constant="8" id="fns-Cl-ym4"/>
+                            <constraint firstItem="Oye-c9-z7e" firstAttribute="height" relation="greaterThanOrEqual" secondItem="hfV-Wq-DZJ" secondAttribute="height" multiplier="0.3" id="gw0-Bz-QNu"/>
                             <constraint firstItem="C0u-Ce-IhV" firstAttribute="trailing" secondItem="hfV-Wq-DZJ" secondAttribute="trailingMargin" id="jWP-dC-hY7"/>
                             <constraint firstItem="ZeE-1T-90B" firstAttribute="top" secondItem="aby-pg-qWr" secondAttribute="bottom" id="m8E-As-3se"/>
                             <constraint firstAttribute="centerX" secondItem="ZeE-1T-90B" secondAttribute="centerX" id="nON-kL-gQi"/>
                             <constraint firstItem="vmW-zR-2Ad" firstAttribute="top" secondItem="Oye-c9-z7e" secondAttribute="bottom" constant="8" id="uGA-k5-feJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="E3y-sH-uw1"/>
+                                <exclude reference="Kel-kb-48Y"/>
+                                <exclude reference="Uiw-Nc-Wqq"/>
+                                <exclude reference="eDk-Go-yLq"/>
+                                <exclude reference="gw0-Bz-QNu"/>
+                                <exclude reference="Rv1-lV-yBQ"/>
+                                <exclude reference="uGA-k5-feJ"/>
+                                <exclude reference="MtS-Xy-dcI"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imvCena" destination="Oye-c9-z7e" id="fsD-pU-FRk"/>
+                        <outlet property="lblNomeCena" destination="ZeE-1T-90B" id="KTI-mD-fWN"/>
+                        <outlet property="tableAcoes" destination="C0u-Ce-IhV" id="zxi-Cv-rp7"/>
+                        <outlet property="tvDescricaoCena" destination="vmW-zR-2Ad" id="2Ov-7q-err"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DM7-u9-d5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
