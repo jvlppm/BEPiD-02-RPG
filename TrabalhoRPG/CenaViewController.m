@@ -6,17 +6,25 @@
 //  Copyright (c) 2015 João Vitor P. Moraes. All rights reserved.
 //
 
+#import <SpriteKit/SpriteKit.h>
 #import "CenaViewController.h"
-#include "Cenario.h"
-#include "EstadoJogo.h"
-#include "Mundo.h"
+#import "Cenario.h"
+#import "EstadoJogo.h"
+#import "Mundo.h"
+#import "GameScene.h"
 
 @interface CenaViewController () {
     NSArray* opcoes;
+    
+    EstadoJogo* estadoJogo;
+    Mundo* mundo;
+    Cenario* atual;
+    
+    GameScene* cenaJogo;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblNomeCena;
-@property (weak, nonatomic) IBOutlet UIImageView *imvCena;
+@property (weak, nonatomic) IBOutlet SKView *skView;
 @property (weak, nonatomic) IBOutlet UITextView *tvDescricaoCena;
 @property (weak, nonatomic) IBOutlet UITableView *tableAcoes;
 
@@ -26,21 +34,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self refresh];
+
     // Do view setup here.
-    self.tableAcoes.delegate = self;
-    self.tableAcoes.dataSource = self;
+    estadoJogo = [EstadoJogo unico];
+    mundo = [Mundo unico];
+    atual = estadoJogo.cenaAtual;
+    [self refresh];
 }
 
 - (void) refresh {
-    EstadoJogo* estado = [EstadoJogo unico];
-    Cenario* atual = estado.cenaAtual;
+    
+    if (cenaJogo)
+        [cenaJogo removeFromParent];
+    
     if (atual) {
+        cenaJogo = [GameScene sceneWithSize:self.skView.bounds.size];
+        cenaJogo.scaleMode = SKSceneScaleModeAspectFit;
+        [self.skView presentScene:cenaJogo];
+        
         self.lblNomeCena.text = atual.nome;
         self.tvDescricaoCena.text = atual.descricao;
-        self.imvCena.image = [UIImage imageNamed:atual.imagem];
+        
+        [cenaJogo setBackground:atual.imagem];
+        
+        
         opcoes = atual.acoes;
         [self.tableAcoes reloadData];
+        
+        [self refreshObjects];
+    }
+}
+
+- (void) refreshObjects {
+    if (atual && atual.objetos) {
+        for (Objeto* obj in atual.objetos) {
+            
+        }
     }
 }
 
@@ -70,9 +99,7 @@
 {
     NSInteger row = indexPath.row;
     Acao* opcao = opcoes[row];
-    EstadoJogo* estado = [EstadoJogo unico];
-    Mundo* mundo = [Mundo unico];
-    estado.cenaAtual = mundo.cenas[opcao.transicao.numero];
+    atual = mundo.cenas[opcao.transicao.numero];
     [self refresh];
 }
 

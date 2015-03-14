@@ -32,6 +32,9 @@
 		CFEC2D681AB106D10001709A /* Mundo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D671AB106D10001709A /* Mundo.m */; };
 		CFEC2D6B1AB11DF60001709A /* Inventorio.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D6A1AB11DF60001709A /* Inventorio.m */; };
 		CFEC2D6E1AB11E730001709A /* BolsaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEC2D6D1AB11E730001709A /* BolsaItem.m */; };
+		E81E524D1AB4525700E817D6 /* add-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E81E524C1AB4525700E817D6 /* add-item-icon.png */; };
+		E81E524F1AB4638D00E817D6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81E524E1AB4638D00E817D6 /* SpriteKit.framework */; };
+		E81E52521AB46B2200E817D6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E81E52511AB46B2200E817D6 /* GameScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,10 @@
 		CFEC2D6A1AB11DF60001709A /* Inventorio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Inventorio.m; path = Classes/Inventorio.m; sourceTree = "<group>"; };
 		CFEC2D6C1AB11E730001709A /* BolsaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BolsaItem.h; path = Classes/BolsaItem.h; sourceTree = "<group>"; };
 		CFEC2D6D1AB11E730001709A /* BolsaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BolsaItem.m; path = Classes/BolsaItem.m; sourceTree = "<group>"; };
+		E81E524C1AB4525700E817D6 /* add-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-item-icon.png"; sourceTree = "<group>"; };
+		E81E524E1AB4638D00E817D6 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		E81E52501AB46B2200E817D6 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
+		E81E52511AB46B2200E817D6 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Classes/GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81E524F1AB4638D00E817D6 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +122,7 @@
 		CF5DC9251AB0EF6D00760540 = {
 			isa = PBXGroup;
 			children = (
+				E81E524E1AB4638D00E817D6 /* SpriteKit.framework */,
 				CF5DC9301AB0EF6D00760540 /* TrabalhoRPG */,
 				CF5DC94A1AB0EF6D00760540 /* TrabalhoRPGTests */,
 				CF5DC92F1AB0EF6D00760540 /* Products */,
@@ -222,6 +231,7 @@
 		CFE4F6D21AB39649003D3DB3 /* Cenas */ = {
 			isa = PBXGroup;
 			children = (
+				E81E524C1AB4525700E817D6 /* add-item-icon.png */,
 				CFE4F6D31AB3965E003D3DB3 /* Cena0.json */,
 				CF6097D81AB2419F007155C2 /* Cena0.jpg */,
 				CFE4F6D81AB3BAE6003D3DB3 /* Cena1.json */,
@@ -239,6 +249,8 @@
 				CFE4F6D01AB392A4003D3DB3 /* Json.m */,
 				CFE4F6D51AB39955003D3DB3 /* EstadoJogo.h */,
 				CFE4F6D61AB39955003D3DB3 /* EstadoJogo.m */,
+				E81E52501AB46B2200E817D6 /* GameScene.h */,
+				E81E52511AB46B2200E817D6 /* GameScene.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -328,6 +340,7 @@
 				CF6097D91AB2419F007155C2 /* Cena0.jpg in Resources */,
 				CFE4F6D41AB3965E003D3DB3 /* Cena0.json in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,
+				E81E524D1AB4525700E817D6 /* add-item-icon.png in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +364,7 @@
 				CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */,
 				CF5DC93A1AB0EF6D00760540 /* ViewController.m in Sources */,
 				CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */,
+				E81E52521AB46B2200E817D6 /* GameScene.m in Sources */,
 				CFEC2D6B1AB11DF60001709A /* Inventorio.m in Sources */,
 				CFE4F6D71AB39955003D3DB3 /* EstadoJogo.m in Sources */,
 				CF6097E81AB255BC007155C2 /* CenaViewController.m in Sources */,
