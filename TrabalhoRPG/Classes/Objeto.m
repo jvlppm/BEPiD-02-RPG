@@ -12,7 +12,11 @@
 
 + (Objeto*) fromDictionary: (NSDictionary*) data {
 	Objeto* obj = [[Objeto alloc] init];
-    obj.posicao = CGPointMake([data[@"x"] floatValue], [data[@"y"] floatValue]);
+    obj.posicao = CGRectMake([data[@"x"] floatValue],
+                             [data[@"y"] floatValue],
+                             [data[@"width"] floatValue],
+                             [data[@"height"] floatValue]
+                            );
     obj.imagem = data[@"imagem"];
     obj.transicao = [Transicao fromDictionary: data[@"transicao"]];
     return obj;

@@ -17,7 +17,7 @@
 + (Objeto*) fromDictionary: (NSDictionary*) data;
 
 @property NSString* imagem;
-@property CGPoint posicao;
+@property CGRect posicao;
 @property Transicao* transicao;
 
 @end

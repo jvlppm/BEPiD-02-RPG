@@ -38,19 +38,4 @@
     return self;
 }
 
-+ (Cenario*) cenaInicial {
-    Cenario* cena = [[Cenario alloc] initWithImage: @"Cena00.png" andName: @"Cena 00"];
-    cena.descricao = @"Descricao cena 00";
-    [cena adicionaTransicao:@"Entrar porta" cena:1];
-    return cena;
-}
-
-+ (Cenario*) cena01 {
-    Cenario* cena = [[Cenario alloc] initWithImage: @"Cena01.png" andName: @"Cena 01"];
-    cena.descricao = @"Descricao cena 01";
-    [cena adicionaObjeto: @"item0.png" x: 5 y: 5 codigoItem: 0];
-    [cena adicionaTransicao:@"Voltar" cena:0];
-    return cena;
-}
-
 @end

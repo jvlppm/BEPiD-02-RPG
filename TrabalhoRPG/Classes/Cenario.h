@@ -27,8 +27,4 @@
 - (void)adicionaAcao: (Acao*) acao;
 - (void)adicionaTransicao: (NSString*) nome cena: (int) numero;
 
-- (void) adicionaObjeto: (NSString*) nome x: (int) posX y: (int) posY to: (Transicao*) transicao;
-- (void) adicionaObjeto: (NSString*) nome x: (int) posX y: (int) posY cena: (int) scene;
-- (void) adicionaObjeto: (NSString*) nome x: (int) posX y: (int) posY codigoItem: (int) code;
-
 @end
