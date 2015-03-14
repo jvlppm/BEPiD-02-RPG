@@ -24,15 +24,18 @@
     
     if ([data[@"tipo"] isEqualToString: @"cena"])
         transicao.tipo = ParaCenario;
-    else if ([data[@"tipo"] isEqualToString: @"item"])
+    else if ([data[@"tipo"] isEqualToString: @"item"]) {
         transicao.tipo = ParaCenaItem;
+        transicao.excluiItems = @[data[@"arquivo"]];
+    }
     else {
         NSLog(@"%@", [NSString stringWithFormat:@"Tipo de transicao desconhecido: %@", data[@"tipo"]]);
         return nil;
     }
     
     transicao.requerItems = data[@"requerItens"];
-    transicao.excluiItems = data[@"excluiItens"];
+    if (data[@"excluiItens"])
+        transicao.excluiItems = data[@"excluiItens"];
     
     return transicao;
 }

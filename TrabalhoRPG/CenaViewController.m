@@ -20,7 +20,6 @@
     NSArray* opcoes;
     
     EstadoJogo* estadoJogo;
-    Mundo* mundo;
     Cenario* atual;
     
     GameScene* cenaJogo;
@@ -40,7 +39,6 @@
 
     // Do view setup here.
     estadoJogo = [EstadoJogo unico];
-    mundo = [Mundo unico];
     atual = estadoJogo.cenaAtual;
     [self refresh];
 }
