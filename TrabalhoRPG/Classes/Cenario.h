@@ -14,6 +14,7 @@
 
 @interface Cenario : NSObject
 
+@property NSString* arquivo;
 @property NSString* imagem;
 @property NSString* nome;
 @property NSString* descricao;
@@ -21,10 +22,12 @@
 @property NSMutableArray* objetos;
 @property double chanceBatalha;
 
-+ (id)fromJsonFile: (NSString*) file;
++ (NSArray*) All;
+
++ (Cenario*) fromFile: (NSString*) file;
 
 - (id)initWithImage: (NSString*) image andName: (NSString*) name;
 - (void)adicionaAcao: (Acao*) acao;
-- (void)adicionaTransicao: (NSString*) nome cena: (int) numero;
+- (void)adicionaTransicao: (NSString*) nome cena: (NSString*) identifier;
 
 @end

@@ -13,13 +13,31 @@
 
 @implementation Cenario
 
-+ (id)fromJsonFile: (NSString*) file {
++ (NSArray*) All {
+    static NSMutableArray* all = nil;
+    @synchronized(self) {
+        if (all == nil) {
+            all = [[NSMutableArray alloc] init];
+            for(int i = 0;;i++) {
+                NSString* file = [NSString stringWithFormat:@"Cena%d", i];
+                Cenario* item = [Cenario createFromFile: file];
+                if (!item)
+                    break;
+                [all addObject: item];
+            }
+        }
+    }
+    return all;
+}
+
++ (id)createFromFile: (NSString*) file {
     NSDictionary* dictionary = [Json fromFile: file];
     if (dictionary == nil)
         return nil;
     
     Cenario* cena = [[Cenario alloc] init];
     if (cena) {
+        cena.arquivo = file;
         cena.imagem = dictionary[@"imagem"];
         cena.nome = dictionary[@"nome"];
         cena.descricao = dictionary[@"descricao"];
@@ -38,6 +56,15 @@
     return cena;
 }
 
++ (Cenario*) fromFile: (NSString*) name {
+    for (Cenario* item in [self All]) {
+        if ([item.arquivo isEqualToString:name]) {
+            return item;
+        }
+    }
+    return nil;
+}
+
 - (id)initWithImage: (NSString*) image andName: (NSString*) name {
     self = [super init];
     if (self) {
@@ -51,8 +78,8 @@
     [_acoes addObject:acao];
 }
 
-- (void)adicionaTransicao: (NSString*) nome cena: (int) numero {
-    [_acoes addObject: [[Transicao alloc] initToScene: numero]];
+- (void)adicionaTransicao: (NSString*) nome cena: (NSString*) identifier {
+    [_acoes addObject: [[Transicao alloc] initToScene: identifier]];
 }
 
 @end

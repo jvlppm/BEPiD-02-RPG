@@ -15,7 +15,7 @@
 
 + (Acao*) fromDictionary: (NSDictionary*) data;
 
-@property NSString* nome;
+@property NSString* texto;
 @property Transicao* transicao;
 
 - (id) initNamed: (NSString*) name to: (Transicao*) transition;

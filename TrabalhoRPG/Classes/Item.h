@@ -12,10 +12,13 @@
 
 @interface Item : NSObject
 
-+ (Item*) fromDictionary: (NSDictionary*) data;
++ (NSArray*) All;
 
+@property NSString* arquivo;
 @property NSString* nome;
 @property NSString* descricao;
 @property NSString* imagem;
+
++ (Item*) fromFile: (NSString*) name;
 
 @end

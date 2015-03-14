@@ -18,13 +18,13 @@ typedef enum : NSUInteger {
 @interface Transicao : NSObject
 
 @property TipoTransicao tipo;
-@property int numero;
+@property NSString* arquivo;
 @property int codigoItemRequisito;
 @property NSString* mensagemRequisito;
 
 + (Transicao*) fromDictionary: (NSDictionary*) data;
 
-- (id) initToScene: (int) number;
-- (id) initToItem: (int) item;
+- (id) initToScene: (NSString*) file;
+- (id) initToItem: (NSString*) file;
 
 @end

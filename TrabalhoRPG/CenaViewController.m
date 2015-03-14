@@ -72,12 +72,12 @@
 
 - (void) makeTransition: (Transicao*) transicao {
     if (transicao.tipo == ParaCenario) {
-        atual = mundo.cenas[transicao.numero];
+        atual = [Cenario fromFile:transicao.arquivo];
         [self refresh];
     }
     else if (transicao.tipo == ParaCenaItem) {
         CenaItemViewController* itemViewController = (CenaItemViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"itemView"];
-        itemViewController.item = [Item fromDictionary:[Json fromFile:[NSString stringWithFormat:@"Item%d", transicao.numero]]];
+        itemViewController.item = [Item fromFile:transicao.arquivo];
         [self showViewController:itemViewController sender:self];
     }
 }
@@ -107,7 +107,7 @@
     
     Acao* opcao = opcoes[indexPath.row];
     
-    cell.textLabel.text = opcao.nome;
+    cell.textLabel.text = opcao.texto;
     
     return cell;
 }

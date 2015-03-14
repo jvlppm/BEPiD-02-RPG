@@ -12,28 +12,28 @@
 
 + (Transicao*) fromDictionary: (NSDictionary*) data {
     if ([data[@"tipo"] isEqualToString: @"cena"])
-        return [[Transicao alloc] initToScene: [data[@"numero"] floatValue]];
+        return [[Transicao alloc] initToScene: data[@"arquivo"]];
 
     if ([data[@"tipo"] isEqualToString: @"item"])
-        return [[Transicao alloc] initToItem: [data[@"numero"] floatValue]];
+        return [[Transicao alloc] initToItem: data[@"arquivo"]];
 
     NSLog(@"%@", [NSString stringWithFormat:@"Tipo de transicao desconhecido: %@", data[@"tipo"]]);
     return nil;
 }
 
-- (id) initToScene: (int) number {
+- (id) initToScene: (NSString*) file {
     self = [super init];
     if (self) {
-        _numero = number;
+        _arquivo = file;
         _tipo = ParaCenario;
     }
     return self;
 }
 
-- (id) initToItem: (int) item {
+- (id) initToItem: (NSString*) file {
     self = [super init];
     if (self) {
-        _numero = item;
+        _arquivo = file;
         _tipo = ParaCenaItem;
     }
     return self;

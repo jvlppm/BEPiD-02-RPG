@@ -25,15 +25,6 @@
 {
     self = [super init];
     if (self) {
-        NSMutableArray* loadCenas = [[NSMutableArray alloc] init];
-        for(int i = 0;;i++) {
-            NSString* arquivo = [NSString stringWithFormat:@"Cena%d", i];
-            Cenario* cena = [Cenario fromJsonFile:arquivo];
-            if (!cena)
-                break;
-            [loadCenas addObject:cena];
-        }
-        _cenas = loadCenas;
     }
     return self;
 }

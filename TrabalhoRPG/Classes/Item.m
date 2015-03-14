@@ -7,15 +7,47 @@
 //
 
 #import "Item.h"
+#import "Json.h"
 
 @implementation Item
 
-+ (Item*) fromDictionary: (NSDictionary*) data {
++ (NSArray*) All {
+    static NSMutableArray* all = nil;
+    @synchronized(self) {
+        if (all == nil) {
+            all = [[NSMutableArray alloc] init];
+            for(int i = 0;;i++) {
+                NSString* file = [NSString stringWithFormat:@"Item%d", i];
+                Item* item = [Item createFromFile: file];
+                if (!item)
+                    break;
+                [all addObject: item];
+            }
+        }
+    }
+    return all;
+}
+
++ (Item*) createFromFile: (NSString*) name {
+    NSDictionary* data = [Json fromFile: name];
+    if (!data)
+        return nil;
+
     Item* obj = [[Item alloc] init];
+    obj.arquivo = name;
     obj.nome = data[@"nome"];
     obj.descricao = data[@"descricao"];
     obj.imagem = data[@"imagem"];
     return obj;
+}
+
++ (Item*) fromFile: (NSString*) name {
+    for (Item* item in [Item All]) {
+        if ([item.arquivo isEqualToString:name]) {
+            return item;
+        }
+    }
+    return nil;
 }
 
 @end

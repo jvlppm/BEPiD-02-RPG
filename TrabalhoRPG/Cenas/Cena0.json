@@ -5,9 +5,9 @@
     "chanceBatalha": 0.3,
 	"acoes": [
 		{
-            "nome": "Ação",
+            "texto": "Ação",
 			"tipo": "cena",
-			"numero": 1
+			"arquivo": "Cena1"
 		},
 	],
 	"objetos": [
@@ -19,7 +19,7 @@
 			"imagem": "add-item-icon.png",
 			"transicao": {
 				"tipo": "item",
-				"numero": 1
+				"arquivo": "Item0"
 			}
 		}
 	]

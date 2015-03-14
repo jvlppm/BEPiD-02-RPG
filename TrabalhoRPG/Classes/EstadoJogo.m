@@ -25,8 +25,7 @@
 - (id) initGame {
     self = [super init];
     if (self) {
-        Mundo* mundo = [Mundo unico];
-        self.cenaAtual = mundo.cenas[0];
+        self.cenaAtual = [Cenario fromFile:@"Cena0"];
     }
     return self;
 }

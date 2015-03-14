@@ -12,7 +12,7 @@
 
 + (Acao*) fromDictionary: (NSDictionary*) data {
     Acao* acao = [[Acao alloc] init];
-    acao.nome = data[@"nome"];
+    acao.texto = data[@"texto"];
     acao.transicao = [Transicao fromDictionary:data];
     return acao;
 }
@@ -20,7 +20,7 @@
 - (id) initNamed: (NSString*) name to: (Transicao*) transition {
     self = [super init];
     if (self) {
-        _nome = name;
+        _texto = name;
         _transicao = transition;
     }
     return self;
