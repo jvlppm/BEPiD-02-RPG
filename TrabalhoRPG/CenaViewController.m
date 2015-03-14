@@ -68,8 +68,14 @@
 }
 
 - (void) makeTransition: (Transicao*) transicao {
-    atual = mundo.cenas[transicao.numero];
-    [self refresh];
+    if (transicao.tipo == ParaCenario) {
+        atual = mundo.cenas[transicao.numero];
+        [self refresh];
+    }
+    else if (transicao.tipo == ParaCenaItem) {
+        UIViewController* itemViewController = (UIViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"itemView"];
+        [self showViewController:itemViewController sender:self];
+    }
 }
 
 #pragma mark Game Delegate

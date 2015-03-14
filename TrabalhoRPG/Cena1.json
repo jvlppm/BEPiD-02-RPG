@@ -4,21 +4,10 @@
     "descricao": "Descrição da cena nova",
     "chanceBatalha": 0.2,
     "acoes": [
-    {
-        "nome": "Ação",
-        "tipo": "cena",
-        "numero": 0
-    },
-              ],
-    "objetos": [
-    {
-        "x": 10,
-        "y": 10,
-        "imagem": "Item00.jpg",
-        "transicao": {
-        "tipo": "cena",
-        "numero": 2
-    }
-    }
+              {
+              "nome": "Ação",
+              "tipo": "item",
+              "numero": 0
+              }
     ]
 }

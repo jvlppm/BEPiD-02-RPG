@@ -18,7 +18,7 @@
             "height": 0.5,
 			"imagem": "add-item-icon.png",
 			"transicao": {
-				"tipo": "cena",
+				"tipo": "item",
 				"numero": 1
 			}
 		}
