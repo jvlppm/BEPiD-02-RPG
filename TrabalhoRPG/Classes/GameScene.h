@@ -7,9 +7,19 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "Objeto.h"
+
+@protocol GameSceneDelegate <NSObject>
+
+- (void) objectTapped: (Objeto*) obj;
+
+@end
 
 @interface GameScene : SKScene
 
+@property (weak) id <GameSceneDelegate> gameDelegate;
+
 - (void) setBackground: (NSString*) image;
+- (void) setObjects: (NSArray*) objects;
 
 @end

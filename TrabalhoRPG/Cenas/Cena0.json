@@ -13,13 +13,13 @@
 	"objetos": [
 		{
 			"x": 0.1,
-			"y": 0.1,
+			"y": 0.5,
             "width": 0.1,
-            "height": 0.1,
+            "height": 0.5,
 			"imagem": "add-item-icon.png",
 			"transicao": {
 				"tipo": "cena",
-				"numero": 2
+				"numero": 1
 			}
 		}
 	]

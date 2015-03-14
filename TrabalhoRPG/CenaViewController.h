@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameScene.h"
 
-@interface CenaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface CenaViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, GameSceneDelegate>
 
 @end

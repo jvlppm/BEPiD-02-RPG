@@ -42,13 +42,16 @@
     [self refresh];
 }
 
+#pragma mark Scene Controller
+
 - (void) refresh {
     
     if (cenaJogo)
         [cenaJogo removeFromParent];
     
     if (atual) {
-        cenaJogo = [GameScene sceneWithSize:self.skView.bounds.size];
+        cenaJogo = [[GameScene alloc] init];
+        [cenaJogo setSize:self.skView.bounds.size];
         cenaJogo.scaleMode = SKSceneScaleModeAspectFit;
         [self.skView presentScene:cenaJogo];
         
@@ -56,22 +59,26 @@
         self.tvDescricaoCena.text = atual.descricao;
         
         [cenaJogo setBackground:atual.imagem];
-        
+        [cenaJogo setObjects: atual.objetos];
+        cenaJogo.gameDelegate = self;
         
         opcoes = atual.acoes;
         [self.tableAcoes reloadData];
-        
-        [self refreshObjects];
     }
 }
 
-- (void) refreshObjects {
-    if (atual && atual.objetos) {
-        for (Objeto* obj in atual.objetos) {
-            
-        }
-    }
+- (void) makeTransition: (Transicao*) transicao {
+    atual = mundo.cenas[transicao.numero];
+    [self refresh];
 }
+
+#pragma mark Game Delegate
+
+- (void) objectTapped: (Objeto*) obj {
+    [self makeTransition:obj.transicao];
+}
+
+#pragma mark Table Delegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -91,7 +98,7 @@
     Acao* opcao = opcoes[indexPath.row];
     
     cell.textLabel.text = opcao.nome;
-
+    
     return cell;
 }
 
@@ -99,8 +106,7 @@
 {
     NSInteger row = indexPath.row;
     Acao* opcao = opcoes[row];
-    atual = mundo.cenas[opcao.transicao.numero];
-    [self refresh];
+    [self makeTransition:opcao.transicao];
 }
 
 @end
