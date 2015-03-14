@@ -10,4 +10,12 @@
 
 @implementation Item
 
++ (Item*) fromDictionary: (NSDictionary*) data {
+    Item* obj = [[Item alloc] init];
+    obj.nome = data[@"nome"];
+    obj.descricao = data[@"descricao"];
+    obj.imagem = data[@"imagem"];
+    return obj;
+}
+
 @end

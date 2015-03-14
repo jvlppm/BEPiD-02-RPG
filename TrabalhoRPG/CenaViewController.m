@@ -12,6 +12,9 @@
 #import "EstadoJogo.h"
 #import "Mundo.h"
 #import "GameScene.h"
+#import "CenaItemViewController.h"
+#import "Item.h"
+#import "Json.h"
 
 @interface CenaViewController () {
     NSArray* opcoes;
@@ -73,7 +76,8 @@
         [self refresh];
     }
     else if (transicao.tipo == ParaCenaItem) {
-        UIViewController* itemViewController = (UIViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"itemView"];
+        CenaItemViewController* itemViewController = (CenaItemViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"itemView"];
+        itemViewController.item = [Item fromDictionary:[Json fromFile:[NSString stringWithFormat:@"Item%d", transicao.numero]]];
         [self showViewController:itemViewController sender:self];
     }
 }

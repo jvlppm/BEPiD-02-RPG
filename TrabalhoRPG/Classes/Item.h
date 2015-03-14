@@ -12,7 +12,10 @@
 
 @interface Item : NSObject
 
++ (Item*) fromDictionary: (NSDictionary*) data;
+
 @property NSString* nome;
-@property int codigo;
+@property NSString* descricao;
+@property NSString* imagem;
 
 @end

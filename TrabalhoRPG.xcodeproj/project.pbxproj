@@ -35,6 +35,9 @@
 		E81E524D1AB4525700E817D6 /* add-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E81E524C1AB4525700E817D6 /* add-item-icon.png */; };
 		E81E524F1AB4638D00E817D6 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81E524E1AB4638D00E817D6 /* SpriteKit.framework */; };
 		E81E52521AB46B2200E817D6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E81E52511AB46B2200E817D6 /* GameScene.m */; };
+		E81E52551AB491AD00E817D6 /* CenaItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81E52541AB491AD00E817D6 /* CenaItemViewController.m */; };
+		E81E52591AB494B900E817D6 /* Item0.json in Resources */ = {isa = PBXBuildFile; fileRef = E81E52581AB494B900E817D6 /* Item0.json */; };
+		E81E525C1AB49A5D00E817D6 /* Item1.json in Resources */ = {isa = PBXBuildFile; fileRef = E81E525B1AB49A5D00E817D6 /* Item1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,10 @@
 		E81E524E1AB4638D00E817D6 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		E81E52501AB46B2200E817D6 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
 		E81E52511AB46B2200E817D6 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Classes/GameScene.m; sourceTree = "<group>"; };
+		E81E52531AB491AD00E817D6 /* CenaItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenaItemViewController.h; sourceTree = "<group>"; };
+		E81E52541AB491AD00E817D6 /* CenaItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenaItemViewController.m; sourceTree = "<group>"; };
+		E81E52581AB494B900E817D6 /* Item0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item0.json; path = ../Item0.json; sourceTree = "<group>"; };
+		E81E525B1AB49A5D00E817D6 /* Item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Item1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +148,7 @@
 		CF5DC9301AB0EF6D00760540 /* TrabalhoRPG */ = {
 			isa = PBXGroup;
 			children = (
+				E81E525A1AB494DB00E817D6 /* Items */,
 				CFE4F6D21AB39649003D3DB3 /* Cenas */,
 				CFEC2D4A1AB0F13B0001709A /* Classes */,
 				CF5DC9351AB0EF6D00760540 /* AppDelegate.h */,
@@ -149,6 +157,8 @@
 				CF5DC9391AB0EF6D00760540 /* ViewController.m */,
 				CF6097E61AB255BC007155C2 /* CenaViewController.h */,
 				CF6097E71AB255BC007155C2 /* CenaViewController.m */,
+				E81E52531AB491AD00E817D6 /* CenaItemViewController.h */,
+				E81E52541AB491AD00E817D6 /* CenaItemViewController.m */,
 				CF5DC93B1AB0EF6D00760540 /* Main.storyboard */,
 				CF5DC93E1AB0EF6D00760540 /* Images.xcassets */,
 				CF5DC9401AB0EF6D00760540 /* LaunchScreen.xib */,
@@ -255,6 +265,15 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		E81E525A1AB494DB00E817D6 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				E81E52581AB494B900E817D6 /* Item0.json */,
+				E81E525B1AB49A5D00E817D6 /* Item1.json */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +358,8 @@
 				CF5DC93D1AB0EF6D00760540 /* Main.storyboard in Resources */,
 				CF6097D91AB2419F007155C2 /* Cena0.jpg in Resources */,
 				CFE4F6D41AB3965E003D3DB3 /* Cena0.json in Resources */,
+				E81E52591AB494B900E817D6 /* Item0.json in Resources */,
+				E81E525C1AB49A5D00E817D6 /* Item1.json in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,
 				E81E524D1AB4525700E817D6 /* add-item-icon.png in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
@@ -363,6 +384,7 @@
 				CFE4F6D11AB392A4003D3DB3 /* Json.m in Sources */,
 				CFEC2D501AB0F4E40001709A /* Transicao.m in Sources */,
 				CF5DC93A1AB0EF6D00760540 /* ViewController.m in Sources */,
+				E81E52551AB491AD00E817D6 /* CenaItemViewController.m in Sources */,
 				CFEC2D621AB0FBC30001709A /* ValorLevel.m in Sources */,
 				E81E52521AB46B2200E817D6 /* GameScene.m in Sources */,
 				CFEC2D6B1AB11DF60001709A /* Inventorio.m in Sources */,

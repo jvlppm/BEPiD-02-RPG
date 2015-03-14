@@ -4,6 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -40,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="1104" y="309"/>
         </scene>
-        <!--View Controller-->
+        <!--Cena Item View Controller-->
         <scene sceneID="3vm-m0-yzv">
             <objects>
-                <viewController storyboardIdentifier="itemView" id="ld0-CV-pto" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="itemView" id="ld0-CV-pto" customClass="CenaItemViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Fv-F5-mjL"/>
                         <viewControllerLayoutGuide type="bottom" id="ctw-Vd-9YL"/>
@@ -58,14 +59,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOj-p2-ndc">
-                                <rect key="frame" x="16" y="73" width="568" height="355"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="XOj-p2-ndc" secondAttribute="height" multiplier="8:5" id="7PE-of-k4x"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOj-p2-ndc">
+                                <rect key="frame" x="16" y="73" width="568" height="360"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE4-zi-yCm">
-                                <rect key="frame" x="16" y="436" width="568" height="156"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE4-zi-yCm">
+                                <rect key="frame" x="16" y="441" width="568" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -74,17 +73,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ctw-Vd-9YL" firstAttribute="top" secondItem="tE4-zi-yCm" secondAttribute="bottom" constant="8" id="15R-L2-dYC"/>
+                            <constraint firstItem="XOj-p2-ndc" firstAttribute="height" relation="greaterThanOrEqual" secondItem="zoN-qq-ccP" secondAttribute="height" multiplier="0.4" id="A52-gM-VmH"/>
                             <constraint firstAttribute="centerX" secondItem="xxp-KX-2HU" secondAttribute="centerX" constant="-0.5" id="Des-Wa-GRS"/>
                             <constraint firstItem="xxp-KX-2HU" firstAttribute="top" secondItem="6Fv-F5-mjL" secondAttribute="bottom" constant="24" id="Mmz-By-b7e"/>
                             <constraint firstItem="XOj-p2-ndc" firstAttribute="leading" secondItem="zoN-qq-ccP" secondAttribute="leadingMargin" id="QgC-dz-qAQ"/>
+                            <constraint firstItem="XOj-p2-ndc" firstAttribute="height" secondItem="zoN-qq-ccP" secondAttribute="height" priority="999" id="W3b-xC-kkm"/>
                             <constraint firstItem="XOj-p2-ndc" firstAttribute="top" secondItem="xxp-KX-2HU" secondAttribute="bottom" constant="8" id="aUb-Ps-WzK"/>
+                            <constraint firstItem="tE4-zi-yCm" firstAttribute="trailing" secondItem="zoN-qq-ccP" secondAttribute="trailingMargin" id="dqo-of-tef"/>
+                            <constraint firstItem="tE4-zi-yCm" firstAttribute="top" secondItem="XOj-p2-ndc" secondAttribute="bottom" constant="8" id="ecK-Hk-42J"/>
+                            <constraint firstItem="XOj-p2-ndc" firstAttribute="height" relation="lessThanOrEqual" secondItem="zoN-qq-ccP" secondAttribute="height" multiplier="0.6" id="pTS-a0-g7v"/>
+                            <constraint firstItem="tE4-zi-yCm" firstAttribute="leading" secondItem="zoN-qq-ccP" secondAttribute="leadingMargin" id="xPS-tb-4xj"/>
                             <constraint firstItem="XOj-p2-ndc" firstAttribute="trailing" secondItem="zoN-qq-ccP" secondAttribute="trailingMargin" id="xQs-kW-cVV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ivItem" destination="XOj-p2-ndc" id="FN0-vR-UcW"/>
+                        <outlet property="lblNome" destination="xxp-KX-2HU" id="nN4-Cp-vBR"/>
+                        <outlet property="tvDescricao" destination="tE4-zi-yCm" id="geI-Uw-scV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-vn-LFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2691" y="416"/>
+            <point key="canvasLocation" x="2458" y="309"/>
         </scene>
         <!--Cena View Controller-->
         <scene sceneID="ii1-Tc-6NV">
