@@ -36,6 +36,9 @@
 - (void) setObjects: (NSArray*) objects {
     int i = 0;
     for(Objeto* obj in objects) {
+        if (![obj.transicao available])
+            continue;
+        
         SKSpriteNode* objNode = [[SKSpriteNode alloc] initWithImageNamed:obj.imagem];
         
         [self addChild:objNode];

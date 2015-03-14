@@ -7,36 +7,52 @@
 //
 
 #import "Transicao.h"
+#import "Item.h"
+#import "Inventorio.h"
 
 @implementation Transicao
 
+- (id) initFromFile: (NSString*) file {
+    self = [super init];
+    if(self)
+        self.arquivo = file;
+    return self;
+}
+
 + (Transicao*) fromDictionary: (NSDictionary*) data {
+    Transicao* transicao = [[Transicao alloc] initFromFile:data[@"arquivo"]];
+    
     if ([data[@"tipo"] isEqualToString: @"cena"])
-        return [[Transicao alloc] initToScene: data[@"arquivo"]];
-
-    if ([data[@"tipo"] isEqualToString: @"item"])
-        return [[Transicao alloc] initToItem: data[@"arquivo"]];
-
-    NSLog(@"%@", [NSString stringWithFormat:@"Tipo de transicao desconhecido: %@", data[@"tipo"]]);
-    return nil;
+        transicao.tipo = ParaCenario;
+    else if ([data[@"tipo"] isEqualToString: @"item"])
+        transicao.tipo = ParaCenaItem;
+    else {
+        NSLog(@"%@", [NSString stringWithFormat:@"Tipo de transicao desconhecido: %@", data[@"tipo"]]);
+        return nil;
+    }
+    
+    transicao.requerItems = data[@"requerItens"];
+    transicao.excluiItems = data[@"excluiItens"];
+    
+    return transicao;
 }
 
-- (id) initToScene: (NSString*) file {
-    self = [super init];
-    if (self) {
-        _arquivo = file;
-        _tipo = ParaCenario;
+- (BOOL) available {
+    if(self.requerItems) {
+        for (NSString* itemFile in self.requerItems) {
+            if (![Inventorio contemItem:itemFile])
+                return NO;
+        }
     }
-    return self;
-}
-
-- (id) initToItem: (NSString*) file {
-    self = [super init];
-    if (self) {
-        _arquivo = file;
-        _tipo = ParaCenaItem;
+    
+    if(self.excluiItems) {
+        for (NSString* itemFile in self.excluiItems) {
+            if ([Inventorio contemItem:itemFile])
+                return NO;
+        }
     }
-    return self;
+    
+    return YES;
 }
 
 @end

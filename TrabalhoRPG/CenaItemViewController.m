@@ -7,6 +7,7 @@
 //
 
 #import "CenaItemViewController.h"
+#import "Inventorio.h"
 
 @interface CenaItemViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *ivItem;
@@ -19,10 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     self.lblNome.text = self.item.nome;
     self.ivItem.image = [UIImage imageNamed:self.item.imagem];
     self.tvDescricao.text = self.item.descricao;
+    
+    [Inventorio adicionaItem:self.item];
 }
 
 - (void)didReceiveMemoryWarning {

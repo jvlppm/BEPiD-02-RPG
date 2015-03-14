@@ -19,12 +19,12 @@ typedef enum : NSUInteger {
 
 @property TipoTransicao tipo;
 @property NSString* arquivo;
-@property int codigoItemRequisito;
-@property NSString* mensagemRequisito;
+
+@property NSArray* requerItems;
+@property NSArray* excluiItems;
 
 + (Transicao*) fromDictionary: (NSDictionary*) data;
 
-- (id) initToScene: (NSString*) file;
-- (id) initToItem: (NSString*) file;
+- (BOOL) available;
 
 @end

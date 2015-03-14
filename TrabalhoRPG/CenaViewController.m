@@ -45,6 +45,10 @@
     [self refresh];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [self refresh];
+}
+
 #pragma mark Scene Controller
 
 - (void) refresh {
@@ -65,9 +69,21 @@
         [cenaJogo setObjects: atual.objetos];
         cenaJogo.gameDelegate = self;
         
-        opcoes = atual.acoes;
-        [self.tableAcoes reloadData];
+        [self refreshOpcoes];
+        
     }
+}
+
+- (void) refreshOpcoes {
+    NSMutableArray* avOptions = [[NSMutableArray alloc] init];
+    
+    for (Acao* acao in atual.acoes) {
+        if ([acao.transicao available])
+            [avOptions addObject:acao];
+    }
+    
+    opcoes = avOptions;
+    [self.tableAcoes reloadData];
 }
 
 - (void) makeTransition: (Transicao*) transicao {

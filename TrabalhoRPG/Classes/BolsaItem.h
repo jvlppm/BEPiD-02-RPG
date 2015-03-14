@@ -9,10 +9,13 @@
 // Item de inventório
 
 #import <Foundation/Foundation.h>
+#import "Item.h"
 
 @interface BolsaItem : NSObject
 
-@property int codigo;
+- (id) initWithItem: (Item*) item quantity: (int) quantity;
+
+@property Item* item;
 @property int quantidade;
 
 @end

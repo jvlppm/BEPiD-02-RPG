@@ -10,4 +10,13 @@
 
 @implementation BolsaItem
 
+- (id) initWithItem: (Item*) item quantity: (int) quantity {
+    self = [super init];
+    if(self) {
+        self.item = item;
+        self.quantidade = quantity;
+    }
+    return self;
+}
+
 @end

@@ -13,8 +13,8 @@
 
 @interface Inventorio : NSObject
 
-@property NSArray* items;
-
-+ (id) inventorioUnico;
++ (BOOL) contemItem: (NSString*) named;
++ (void) adicionaItem: (Item*) item;
++ (void) usaItem: (Item*) item;
 
 @end

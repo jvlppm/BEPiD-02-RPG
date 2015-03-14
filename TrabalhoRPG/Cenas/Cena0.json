@@ -7,7 +7,8 @@
 		{
             "texto": "Ação",
 			"tipo": "cena",
-			"arquivo": "Cena1"
+			"arquivo": "Cena1",
+            "requerItens": ["Item0"]
 		},
 	],
 	"objetos": [
@@ -19,7 +20,8 @@
 			"imagem": "add-item-icon.png",
 			"transicao": {
 				"tipo": "item",
-				"arquivo": "Item0"
+				"arquivo": "Item0",
+                "excluiItens": ["Item0"]
 			}
 		}
 	]
