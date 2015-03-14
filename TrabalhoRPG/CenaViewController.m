@@ -10,19 +10,13 @@
 #import "CenaViewController.h"
 #import "Cenario.h"
 #import "EstadoJogo.h"
-#import "Mundo.h"
 #import "GameScene.h"
 #import "CenaItemViewController.h"
 #import "Item.h"
-#import "Json.h"
 
 @interface CenaViewController () {
     NSArray* opcoes;
-    
-    EstadoJogo* estadoJogo;
-    Cenario* atual;
-    
-    GameScene* cenaJogo;
+    GameScene* emExibicao;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *lblNomeCena;
@@ -38,8 +32,6 @@
     [super viewDidLoad];
 
     // Do view setup here.
-    estadoJogo = [EstadoJogo unico];
-    atual = estadoJogo.cenaAtual;
     [self refresh];
 }
 
@@ -51,28 +43,32 @@
 
 - (void) refresh {
     
-    if (cenaJogo)
-        [cenaJogo removeFromParent];
+    EstadoJogo* estadoJogo = [EstadoJogo unico];
+    Cenario* cenaJogo = estadoJogo.cenaAtual;
     
-    if (atual) {
-        cenaJogo = [[GameScene alloc] init];
-        [cenaJogo setSize:self.skView.bounds.size];
-        cenaJogo.scaleMode = SKSceneScaleModeAspectFit;
-        [self.skView presentScene:cenaJogo];
+    if (emExibicao) {
+        [emExibicao removeFromParent];
+        emExibicao = nil;
+    }
+    
+    if (cenaJogo) {
+        emExibicao = [[GameScene alloc] init];
+        [emExibicao setSize:self.skView.bounds.size];
+        emExibicao.scaleMode = SKSceneScaleModeAspectFit;
+        [self.skView presentScene:emExibicao];
         
-        self.lblNomeCena.text = atual.nome;
-        self.tvDescricaoCena.text = atual.descricao;
+        self.lblNomeCena.text = cenaJogo.nome;
+        self.tvDescricaoCena.text = cenaJogo.descricao;
         
-        [cenaJogo setBackground:atual.imagem];
-        [cenaJogo setObjects: atual.objetos];
-        cenaJogo.gameDelegate = self;
+        [emExibicao setBackground:cenaJogo.imagem];
+        [emExibicao setObjects: cenaJogo.objetos];
+        emExibicao.gameDelegate = self;
         
-        [self refreshOpcoes];
-        
+        [self refreshOpcoes: cenaJogo];
     }
 }
 
-- (void) refreshOpcoes {
+- (void) refreshOpcoes: (Cenario*) atual {
     NSMutableArray* avOptions = [[NSMutableArray alloc] init];
     
     for (Acao* acao in atual.acoes) {
@@ -86,7 +82,8 @@
 
 - (void) makeTransition: (Transicao*) transicao {
     if (transicao.tipo == ParaCenario) {
-        atual = [Cenario fromFile:transicao.arquivo];
+        EstadoJogo* estadoJogo = [EstadoJogo unico];
+        estadoJogo.cenaAtual = [Cenario fromFile:transicao.arquivo];
         [self refresh];
     }
     else if (transicao.tipo == ParaCenaItem) {
