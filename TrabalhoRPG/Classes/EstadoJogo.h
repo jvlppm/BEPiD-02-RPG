@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Cenario.h"
+#import "Personagem.h"
 
 @interface EstadoJogo : NSObject
 
@@ -15,6 +16,11 @@
 
 @property (getter=getCenaAtual, setter=setCenaAtual:) Cenario* cenaAtual;
 @property (getter=getNovoJogo, setter=setNovoJogo:) BOOL novoJogo;
+@property (getter=getEnergiaJogador, setter=setEnergiaJogador:) float energiaJogador;
+@property (getter=getAtaques, setter=setAtaques:) NSArray* ataques;
+@property (getter=getLevel, setter=setLevel:) float level;
+
+@property Personagem* jogador;
 
 - (void) descartarJogo;
 

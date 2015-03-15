@@ -17,7 +17,16 @@
 @property NSString* imagem;
 @property NSArray* ataques;
 
+@property NSDictionary* statusAtaque;
+@property NSDictionary* statusDefesa;
+
 @property int level;
 @property ValorLevel* energia;
+@property ValorLevel* xp;
+
++ (Personagem*) fromDictionary: (NSDictionary*) data;
+
+- (float) getAtaqueMult: (NSString*) tipo;
+- (float) getDefesaMult: (NSString*) tipo;
 
 @end

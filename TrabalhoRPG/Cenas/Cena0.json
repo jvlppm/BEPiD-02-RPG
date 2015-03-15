@@ -4,7 +4,9 @@
 	"descricao": "Descrição da cena",
     "inimigosPossiveis": [ {
                           "chance": 0.3,
-                          "arquivo": "Inimigo0"
+                          "arquivo": "Inimigo0",
+                          "level_min": 1,
+                          "level_max": 2
                           }],
 	"acoes": [
 		{

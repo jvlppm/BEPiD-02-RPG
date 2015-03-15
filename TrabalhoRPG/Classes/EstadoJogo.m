@@ -9,7 +9,12 @@
 // Estado atual do jogo em andamento
 
 #import "EstadoJogo.h"
-#include "Mundo.h"
+#import "Mundo.h"
+#import "Json.h"
+
+@interface EstadoJogo ()
+
+@end
 
 @implementation EstadoJogo
 
@@ -27,6 +32,7 @@
 {
     self = [super init];
     if (self) {
+        _jogador = [Personagem fromDictionary:[Json fromFile:@"Jogador"]];
     }
     return self;
 }
@@ -62,5 +68,47 @@
     else
         [defaults setValue:@"" forKey:@"jogoEmAndamento"];
 
+}
+
+- (float)getEnergiaJogador {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    float energia = [defaults floatForKey:@"energiaJogador"];
+    if (!energia)
+        energia = [_jogador.energia calculaValor:[self getLevel]];
+    return energia;
+}
+
+- (void)setEnergiaJogador:(float)value {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setFloat:value forKey:@"energiaJogador"];
+    [defaults synchronize];
+}
+
+-(float) getLevel {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    float lvl = [defaults floatForKey:@"levelJogador"];
+    if (!lvl || lvl <= 0)
+        return 1;
+    return lvl;
+}
+
+-(void) setLevel: (float)value {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setFloat:value forKey:@"levelJogador"];
+    [defaults synchronize];
+}
+
+-(NSArray*) getAtaques {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    NSArray* ataques = [defaults objectForKey:@"ataquesJogador"];
+    if (!ataques)
+        ataques = _jogador.ataques;
+    return ataques;
+}
+
+-(void) setAtaques: (NSArray*) value {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:value forKey:@"ataquesJogador"];
+    [defaults synchronize];
 }
 @end

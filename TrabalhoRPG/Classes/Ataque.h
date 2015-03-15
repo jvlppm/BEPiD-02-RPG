@@ -11,16 +11,13 @@
 #import <Foundation/Foundation.h>
 #include "ValorLevel.h"
 
-typedef enum : NSUInteger {
-    Fire,
-    Water,
-    Grass,
-} TipoAtaque;
-
 @interface Ataque : NSObject
-
+@property NSString* tipo;
+@property NSString* nome;
+@property ValorLevel* forca;
 @property ValorLevel* quantidadeMaxima;
-@property int vezesUsado;
-@property TipoAtaque tipo;
 
++ (Ataque*) fromFile: (NSString*) file;
++ (Ataque*) fromDictionary: (NSDictionary*) data;
+- (id) initFromDictionary: (NSDictionary*) data;
 @end

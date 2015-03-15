@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import "Cenario.h"
-#include "Json.h"
+#import "Json.h"
+#import "InimigoPossivel.h"
 
 @implementation Cenario
 
@@ -41,7 +42,14 @@
         cena.imagem = dictionary[@"imagem"];
         cena.nome = dictionary[@"nome"];
         cena.descricao = dictionary[@"descricao"];
-        cena.chanceBatalha = [dictionary[@"chanceBatalha"] doubleValue];
+        
+        NSMutableArray* inimigos = [[NSMutableArray alloc] init];
+        
+        for (NSDictionary* ini in dictionary[@"inimigosPossiveis"]) {
+            [inimigos addObject:[InimigoPossivel fromDictionary:ini]];
+        }
+        
+        cena.inimigosPossiveis = inimigos;
 
         NSMutableArray* acoes = [[NSMutableArray alloc] init];
         for (id data in dictionary[@"acoes"])
@@ -76,10 +84,6 @@
 
 - (void)adicionaAcao: (Acao*) acao {
     [_acoes addObject:acao];
-}
-
-- (void)adicionaTransicao: (NSString*) nome cena: (NSString*) identifier {
-    [_acoes addObject: [[Transicao alloc] initToScene: identifier]];
 }
 
 @end

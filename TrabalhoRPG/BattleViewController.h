@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Personagem.h"
 
-@interface BattleViewController : UIViewController
+@interface BattleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property Personagem* inimigo;
 
 @end

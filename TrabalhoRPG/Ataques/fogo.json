@@ -1,0 +1,12 @@
+{
+    "tipo": "fogo",
+    "nome": "Bola de fogo",
+    "forca": {
+        "base": 5,
+        "porLevel": 3
+    },
+    "quantidadeMaxima": {
+        "base": 5,
+        "porLevel": 3
+    }
+}

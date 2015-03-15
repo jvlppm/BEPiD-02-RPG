@@ -1,0 +1,19 @@
+{
+    "nome": "Inimigo0",
+    "imagem": "Cena0.jpg",
+    "energia": {
+        "base": 15,
+        "porLevel": 30
+    },
+    "xp": {
+        "base": 5,
+        "porLevel": 3
+    },
+    "ataques": ["normal", "fogo"],
+    "status_ataque": {
+        "fogo": 1.2
+    },
+    "status_defesa": {
+        "agua": 0.8
+    }
+}

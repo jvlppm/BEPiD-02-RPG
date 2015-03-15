@@ -1,0 +1,12 @@
+{
+    "tipo": "normal",
+    "nome": "Bater",
+    "forca": {
+        "base": 3,
+        "porLevel": 2
+    },
+    "quantidadeMaxima": {
+        "base": 5,
+        "porLevel": 3
+    }
+}

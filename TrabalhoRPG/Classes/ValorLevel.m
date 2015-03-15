@@ -18,16 +18,15 @@
 @implementation ValorLevel
 
 + (ValorLevel*) fromDictionary: (NSDictionary*) data {
-    float base= [data[@"base"] floatValue];
-    float mult = [data[@"porLevel"] floatValue];
-    return [[ValorLevel alloc] initWith:base multiplying:mult];
+    return [[ValorLevel alloc] initFromDictionary:data];
 }
 
-- (id) initWith: (float) base multiplying: (float) levelMultiplier {
+- (instancetype)initFromDictionary:(NSDictionary *)data
+{
     self = [super init];
     if (self) {
-        valorBase = base;
-        multiplicador = levelMultiplier;
+        valorBase = [data[@"base"] floatValue];
+        multiplicador = [data[@"porLevel"] floatValue];
     }
     return self;
 }

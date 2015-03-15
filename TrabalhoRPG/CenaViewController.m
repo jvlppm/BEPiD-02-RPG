@@ -13,6 +13,10 @@
 #import "GameScene.h"
 #import "CenaItemViewController.h"
 #import "Item.h"
+#import "InimigoPossivel.h"
+#import "BattleViewController.h"
+#import "Personagem.h"
+#import "Json.h"
 
 @interface CenaViewController () {
     NSArray* opcoes;
@@ -67,7 +71,29 @@
         emExibicao.gameDelegate = self;
         
         [self refreshOpcoes: cenaJogo];
+        
+        [self verificaBatalha: cenaJogo];
     }
+}
+
+- (void) verificaBatalha: (Cenario*) atual {
+    
+    for(InimigoPossivel* ini in atual.inimigosPossiveis) {
+        float rnd = ((float)arc4random()/0x100000000);
+        if (ini.chance >= rnd) {
+            BattleViewController* viewController = (BattleViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"battleView"];
+            viewController.inimigo = [Personagem fromDictionary:[Json fromFile:ini.arquivo]];
+            viewController.inimigo.level = (int)[CenaViewController randomFloatBetween:ini.level_min andLargerFloat:ini.level_max];
+            [self showViewController:viewController sender:self];
+            break;
+        }
+    }
+}
+
++(float)randomFloatBetween:(float)num1 andLargerFloat:(float)num2
+{
+    float range = num2 - num1;
+    return ((float)arc4random() / 0x100000000) * range + num1;
 }
 
 - (void) refreshOpcoes: (Cenario*) atual {

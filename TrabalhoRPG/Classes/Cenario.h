@@ -20,7 +20,7 @@
 @property NSString* descricao;
 @property NSMutableArray* acoes;
 @property NSMutableArray* objetos;
-@property double chanceBatalha;
+@property NSArray* inimigosPossiveis;
 
 + (NSArray*) All;
 
@@ -28,6 +28,5 @@
 
 - (id)initWithImage: (NSString*) image andName: (NSString*) name;
 - (void)adicionaAcao: (Acao*) acao;
-- (void)adicionaTransicao: (NSString*) nome cena: (NSString*) identifier;
 
 @end
