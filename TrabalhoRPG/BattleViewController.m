@@ -59,6 +59,12 @@
 }
 
 - (void) ataqueInimigo {
+    
+    if (energiaInimigo <= 0) {
+        [self.navigationController popViewControllerAnimated:YES];
+        return;
+    }
+    
     EstadoJogo* estado = [EstadoJogo unico];
     
     int nAt = arc4random() % self.inimigo.ataques.count;
