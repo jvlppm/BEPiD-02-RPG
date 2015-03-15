@@ -38,6 +38,7 @@
 		E82923801AB5D87A0055E478 /* Inimigo0.json in Resources */ = {isa = PBXBuildFile; fileRef = E829237E1AB5D87A0055E478 /* Inimigo0.json */; };
 		E82923851AB5E2880055E478 /* fogo.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923841AB5E2880055E478 /* fogo.json */; };
 		E82923871AB5F4250055E478 /* normal.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923861AB5F4250055E478 /* normal.json */; };
+		E829238A1AB5F9F90055E478 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82923891AB5F9F90055E478 /* GameOverViewController.m */; };
 		E8560C0A1AB4D77600636FEF /* Item1.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C081AB4D77600636FEF /* Item1.json */; };
 		E8560C0B1AB4D77600636FEF /* Item0.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C091AB4D77600636FEF /* Item0.json */; };
 		E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */; };
@@ -113,6 +114,8 @@
 		E829237E1AB5D87A0055E478 /* Inimigo0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Inimigo0.json; path = Personagens/Inimigo0.json; sourceTree = "<group>"; };
 		E82923841AB5E2880055E478 /* fogo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = fogo.json; path = Ataques/fogo.json; sourceTree = "<group>"; };
 		E82923861AB5F4250055E478 /* normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = normal.json; path = Ataques/normal.json; sourceTree = "<group>"; };
+		E82923881AB5F9F90055E478 /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
+		E82923891AB5F9F90055E478 /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
 		E8560C081AB4D77600636FEF /* Item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item1.json; path = Items/Item1.json; sourceTree = "<group>"; };
 		E8560C091AB4D77600636FEF /* Item0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item0.json; path = Items/Item0.json; sourceTree = "<group>"; };
 		E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-item-icon.png"; path = "Items/add-item-icon.png"; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				E81E52541AB491AD00E817D6 /* CenaItemViewController.m */,
 				E81F31D51AB4F2A2003B0BA4 /* BattleViewController.h */,
 				E81F31D61AB4F2A2003B0BA4 /* BattleViewController.m */,
+				E82923881AB5F9F90055E478 /* GameOverViewController.h */,
+				E82923891AB5F9F90055E478 /* GameOverViewController.m */,
 				CF5DC93B1AB0EF6D00760540 /* Main.storyboard */,
 				CF5DC93E1AB0EF6D00760540 /* Images.xcassets */,
 				CF5DC9401AB0EF6D00760540 /* LaunchScreen.xib */,
@@ -438,6 +443,7 @@
 				CF6097E21AB2446C007155C2 /* Status.m in Sources */,
 				CFEC2D531AB0F5F20001709A /* Acao.m in Sources */,
 				E81F31DF1AB534DD003B0BA4 /* InimigoPossivel.m in Sources */,
+				E829238A1AB5F9F90055E478 /* GameOverViewController.m in Sources */,
 				CFEC2D5F1AB0F95C0001709A /* Personagem.m in Sources */,
 				CFEC2D651AB0FEF60001709A /* Ataque.m in Sources */,
 				CFEC2D681AB106D10001709A /* Mundo.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "BattleViewController.h"
+#import "GameOverViewController.h"
 #import "ValorLevel.h"
 #import "EstadoJogo.h"
 
@@ -73,7 +74,20 @@
         self.tableAtaques.userInteractionEnabled = true;
         self.tableAtaques.alpha = 1;
     }
+    else {
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                 target:self
+                                               selector:@selector(showGameOver)
+                                               userInfo:nil
+                                                repeats:NO];
+    }
+    
     [self refresh];
+}
+
+- (void) showGameOver {
+    GameOverViewController* itemViewController = (GameOverViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"gameOverView"];
+    [self showViewController:itemViewController sender:self];
 }
 
 /*

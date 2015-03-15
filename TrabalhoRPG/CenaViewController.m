@@ -32,13 +32,6 @@
 
 @implementation CenaViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    // Do view setup here.
-    [self refresh];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [self refresh];
     EstadoJogo* estado = [EstadoJogo unico];

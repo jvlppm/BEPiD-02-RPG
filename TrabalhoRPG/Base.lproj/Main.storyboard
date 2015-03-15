@@ -315,6 +315,36 @@
             </objects>
             <point key="canvasLocation" x="1789" y="1049"/>
         </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="4bT-mg-lc1">
+            <objects>
+                <viewController storyboardIdentifier="gameOverView" id="qGR-uR-Cky" customClass="GameOverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aqj-9j-yVJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ba3-XP-vmS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ie7-B8-bMo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fim de Jogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-D1-6V7">
+                                <rect key="frame" x="137" y="264" width="327" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.99215692281723022" green="0.0078431377187371254" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="TIl-D1-6V7" secondAttribute="centerY" id="QEM-f8-EEu"/>
+                            <constraint firstAttribute="centerX" secondItem="TIl-D1-6V7" secondAttribute="centerX" constant="-0.5" id="pHp-fU-uAL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1h-tL-eBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1795" y="-432"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gzz-eT-0qE">
             <objects>
