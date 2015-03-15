@@ -1,0 +1,13 @@
+{
+    "nome": "Rato",
+    "imagem": "Rato.png",
+    "energia": {
+        "base": 5,
+        "porLevel": 3
+    },
+    "xp": {
+        "base": 5,
+        "porLevel": 3
+    },
+    "ataques": ["normal"]
+}

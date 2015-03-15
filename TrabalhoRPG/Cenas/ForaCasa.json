@@ -1,0 +1,18 @@
+{
+	"imagem": "ForaCasa.jpg",
+	"nome": "Vista para a casa",
+	"descricao": "Sua casa está em um campo bonito",
+    "acoes": [
+		{
+            "texto": "Ir para a estradinha",
+			"tipo": "cena",
+			"arquivo": "EstradinhaCasa"
+		},
+        {
+            "texto": "Entrar em casa",
+            "tipo": "cena",
+            "arquivo": "Cena0",
+            "requerItens": ["ItemChave"]
+        },
+	]
+}

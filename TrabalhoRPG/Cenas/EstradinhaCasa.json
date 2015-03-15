@@ -1,0 +1,18 @@
+{
+	"imagem": "EstradinhaCasa.jpg",
+	"nome": "Estrada bonita",
+	"descricao": "Estrada bonita perto de casa",
+    "inimigosPossiveis": [ {
+                          "chance": 0.3,
+                          "arquivo": "Passaro",
+                          "level_min": 1,
+                          "level_max": 2
+                          }],
+	"acoes": [
+		{
+            "texto": "Ir para casa",
+			"tipo": "cena",
+			"arquivo": "ForaCasa"
+		},
+	]
+}
