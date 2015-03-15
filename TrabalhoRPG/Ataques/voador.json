@@ -1,0 +1,12 @@
+{
+    "tipo": "voador",
+    "nome": "Ataque do alto",
+    "forca": {
+        "base": 10,
+        "porLevel": 5
+    },
+    "quantidadeMaxima": {
+        "base": 5,
+        "porLevel": 3
+    }
+}

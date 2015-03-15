@@ -4,7 +4,7 @@
 	"descricao": "Estrada bonita perto de casa",
     "inimigosPossiveis": [ {
                           "chance": 0.3,
-                          "arquivo": "Passaro",
+                          "arquivo": "CegonhaCabecaBaleia",
                           "level_min": 1,
                           "level_max": 2
                           }],

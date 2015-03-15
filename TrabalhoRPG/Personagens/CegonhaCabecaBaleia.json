@@ -1,0 +1,13 @@
+{
+    "nome": "Cegonha-cabeça-de-baleia",
+    "imagem": "CegonhaCabecaBaleia.jpg",
+    "energia": {
+        "base": 8,
+        "porLevel": 4
+    },
+    "xp": {
+        "base": 10,
+        "porLevel": 4
+    },
+    "ataques": ["voador"]
+}

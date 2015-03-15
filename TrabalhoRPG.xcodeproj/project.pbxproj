@@ -58,6 +58,14 @@
 		E82923B81AB61F030055E478 /* ForaCasa.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923B61AB61F030055E478 /* ForaCasa.json */; };
 		E82923BB1AB61FE20055E478 /* EstradinhaCasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923B91AB61FE20055E478 /* EstradinhaCasa.jpg */; };
 		E82923BC1AB61FE20055E478 /* EstradinhaCasa.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923BA1AB61FE20055E478 /* EstradinhaCasa.json */; };
+		E82923BF1AB62ED20055E478 /* CegonhaCabecaBaleia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923BD1AB62ED20055E478 /* CegonhaCabecaBaleia.jpg */; };
+		E82923C01AB62ED20055E478 /* CegonhaCabecaBaleia.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923BE1AB62ED20055E478 /* CegonhaCabecaBaleia.json */; };
+		E82923C21AB62FE90055E478 /* voador.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923C11AB62FE90055E478 /* voador.json */; };
+		E82923C51AB6332E0055E478 /* Macaco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923C31AB6332E0055E478 /* Macaco.jpg */; };
+		E82923C61AB6332E0055E478 /* Macaco.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923C41AB6332E0055E478 /* Macaco.json */; };
+		E82923C91AB633DA0055E478 /* Pantano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923C71AB633DA0055E478 /* Pantano.jpg */; };
+		E82923CA1AB633DA0055E478 /* Pantano.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923C81AB633DA0055E478 /* Pantano.json */; };
+		E82923CC1AB6377D0055E478 /* CampoAberto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923CB1AB6377D0055E478 /* CampoAberto.jpg */; };
 		E8560C0A1AB4D77600636FEF /* Item1.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C081AB4D77600636FEF /* Item1.json */; };
 		E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C091AB4D77600636FEF /* ItemChave.json */; };
 		E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */; };
@@ -151,6 +159,14 @@
 		E82923B61AB61F030055E478 /* ForaCasa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ForaCasa.json; path = Cenas/ForaCasa.json; sourceTree = "<group>"; };
 		E82923B91AB61FE20055E478 /* EstradinhaCasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = EstradinhaCasa.jpg; path = Cenas/EstradinhaCasa.jpg; sourceTree = "<group>"; };
 		E82923BA1AB61FE20055E478 /* EstradinhaCasa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = EstradinhaCasa.json; path = Cenas/EstradinhaCasa.json; sourceTree = "<group>"; };
+		E82923BD1AB62ED20055E478 /* CegonhaCabecaBaleia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CegonhaCabecaBaleia.jpg; path = Personagens/CegonhaCabecaBaleia.jpg; sourceTree = "<group>"; };
+		E82923BE1AB62ED20055E478 /* CegonhaCabecaBaleia.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CegonhaCabecaBaleia.json; path = Personagens/CegonhaCabecaBaleia.json; sourceTree = "<group>"; };
+		E82923C11AB62FE90055E478 /* voador.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = voador.json; path = Ataques/voador.json; sourceTree = "<group>"; };
+		E82923C31AB6332E0055E478 /* Macaco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Macaco.jpg; path = Personagens/Macaco.jpg; sourceTree = "<group>"; };
+		E82923C41AB6332E0055E478 /* Macaco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Macaco.json; path = Personagens/Macaco.json; sourceTree = "<group>"; };
+		E82923C71AB633DA0055E478 /* Pantano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Pantano.jpg; path = Cenas/Pantano.jpg; sourceTree = "<group>"; };
+		E82923C81AB633DA0055E478 /* Pantano.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Pantano.json; path = Cenas/Pantano.json; sourceTree = "<group>"; };
+		E82923CB1AB6377D0055E478 /* CampoAberto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CampoAberto.jpg; path = Cenas/CampoAberto.jpg; sourceTree = "<group>"; };
 		E8560C081AB4D77600636FEF /* Item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item1.json; path = Items/Item1.json; sourceTree = "<group>"; };
 		E8560C091AB4D77600636FEF /* ItemChave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ItemChave.json; path = Items/ItemChave.json; sourceTree = "<group>"; };
 		E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-item-icon.png"; path = "Items/add-item-icon.png"; sourceTree = "<group>"; };
@@ -315,6 +331,9 @@
 				E82923B61AB61F030055E478 /* ForaCasa.json */,
 				E82923B91AB61FE20055E478 /* EstradinhaCasa.jpg */,
 				E82923BA1AB61FE20055E478 /* EstradinhaCasa.json */,
+				E82923C71AB633DA0055E478 /* Pantano.jpg */,
+				E82923C81AB633DA0055E478 /* Pantano.json */,
+				E82923CB1AB6377D0055E478 /* CampoAberto.jpg */,
 			);
 			name = Cenas;
 			sourceTree = "<group>";
@@ -350,6 +369,10 @@
 		E81F31DC1AB525A9003B0BA4 /* Personagens */ = {
 			isa = PBXGroup;
 			children = (
+				E82923C31AB6332E0055E478 /* Macaco.jpg */,
+				E82923C41AB6332E0055E478 /* Macaco.json */,
+				E82923BD1AB62ED20055E478 /* CegonhaCabecaBaleia.jpg */,
+				E82923BE1AB62ED20055E478 /* CegonhaCabecaBaleia.json */,
 				E829237D1AB5D87A0055E478 /* Jogador.json */,
 				E829237E1AB5D87A0055E478 /* Inimigo0.json */,
 			);
@@ -359,6 +382,7 @@
 		E82923831AB5E2760055E478 /* Ataques */ = {
 			isa = PBXGroup;
 			children = (
+				E82923C11AB62FE90055E478 /* voador.json */,
 				E82923841AB5E2880055E478 /* fogo.json */,
 				E82923861AB5F4250055E478 /* normal.json */,
 			);
@@ -447,10 +471,13 @@
 			files = (
 				E82923971AB60BC40055E478 /* PortaCasa.json in Resources */,
 				E82923A41AB614790055E478 /* VarandaCasa.json in Resources */,
+				E82923C51AB6332E0055E478 /* Macaco.jpg in Resources */,
 				E82923B81AB61F030055E478 /* ForaCasa.json in Resources */,
 				E82923851AB5E2880055E478 /* fogo.json in Resources */,
+				E82923CA1AB633DA0055E478 /* Pantano.json in Resources */,
 				E82923BC1AB61FE20055E478 /* EstradinhaCasa.json in Resources */,
 				E82923871AB5F4250055E478 /* normal.json in Resources */,
+				E82923C91AB633DA0055E478 /* Pantano.jpg in Resources */,
 				E82923A11AB612D40055E478 /* QuartoCasa.jpg in Resources */,
 				E82923A91AB615E50055E478 /* PoraoCasa.jpg in Resources */,
 				E82923AA1AB615E50055E478 /* PoraoCasa.json in Resources */,
@@ -463,16 +490,21 @@
 				E82923941AB60BC40055E478 /* Cena0.jpg in Resources */,
 				E82923A61AB614810055E478 /* VarandaCasa.jpg in Resources */,
 				E82923B41AB61D3A0055E478 /* Rato.png in Resources */,
+				E82923BF1AB62ED20055E478 /* CegonhaCabecaBaleia.jpg in Resources */,
 				E82923B71AB61F030055E478 /* ForaCasa.jpg in Resources */,
 				E82923801AB5D87A0055E478 /* Inimigo0.json in Resources */,
 				E82923AE1AB617AD0055E478 /* DentroPorao.json in Resources */,
 				E829239E1AB611110055E478 /* PortaCasa.jpg in Resources */,
 				CF5DC93D1AB0EF6D00760540 /* Main.storyboard in Resources */,
+				E82923C01AB62ED20055E478 /* CegonhaCabecaBaleia.json in Resources */,
+				E82923C61AB6332E0055E478 /* Macaco.json in Resources */,
 				E8560C0A1AB4D77600636FEF /* Item1.json in Resources */,
 				E82923B01AB61BB20055E478 /* DentroPoraoChave.png in Resources */,
+				E82923CC1AB6377D0055E478 /* CampoAberto.jpg in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,
 				E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */,
 				E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */,
+				E82923C21AB62FE90055E478 /* voador.json in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,13 @@
+{
+    "nome": "Macaco",
+    "imagem": "Macaco.jpg",
+    "energia": {
+        "base": 15,
+        "porLevel": 10
+    },
+    "xp": {
+        "base": 15,
+        "porLevel": 5
+    },
+    "ataques": ["normal"]
+}

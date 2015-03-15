@@ -1,0 +1,18 @@
+{
+	"imagem": "Pantano.jpg",
+	"nome": "Pântano",
+	"descricao": "Um pântano assustador perto de casa",
+    "inimigosPossiveis": [ {
+                          "chance": 0.3,
+                          "arquivo": "Cobra",
+                          "level_min": 1,
+                          "level_max": 2
+                          }],
+	"acoes": [
+		{
+            "texto": "Ir para a estrada",
+			"tipo": "cena",
+			"arquivo": "EstradinhaCasa"
+		},
+	]
+}

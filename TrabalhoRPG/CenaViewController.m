@@ -23,6 +23,7 @@
     GameScene* emExibicao;
 }
 
+@property (weak, nonatomic) IBOutlet UIImageView *ivBackground;
 @property (weak, nonatomic) IBOutlet UILabel *lblNomeCena;
 @property (weak, nonatomic) IBOutlet SKView *skView;
 @property (weak, nonatomic) IBOutlet UITextView *tvDescricaoCena;
@@ -55,6 +56,8 @@
         [emExibicao setSize:self.skView.bounds.size];
         emExibicao.scaleMode = SKSceneScaleModeAspectFit;
         [self.skView presentScene:emExibicao];
+        
+        self.ivBackground.image = [UIImage imageNamed:cenaJogo.imagem];
         
         self.lblNomeCena.text = cenaJogo.nome;
         self.tvDescricaoCena.text = cenaJogo.descricao;
