@@ -1,0 +1,24 @@
+{
+	"imagem": "Floresta.jpg",
+	"nome": "Floresta",
+	"descricao": "Uma floresta cheia de mistérios",
+    "inimigosPossiveis": [ {
+                          "chance": 0.2,
+                          "arquivo": "Cobra",
+                          "level_min": 1,
+                          "level_max": 2
+                          },
+                          {
+                          "chance": 0.2,
+                          "arquivo": "Macaco",
+                          "level_min": 2,
+                          "level_max": 4
+                          }],
+	"acoes": [
+		{
+            "texto": "Ir ao pântano",
+			"tipo": "cena",
+			"arquivo": "Pantano"
+		},
+	]
+}

@@ -14,5 +14,10 @@
 			"tipo": "cena",
 			"arquivo": "EstradinhaCasa"
 		},
+        {
+            "texto": "Atravessar o pântano",
+            "tipo": "cena",
+            "arquivo": "Floresta"
+        },
 	]
 }
