@@ -14,24 +14,7 @@
 
 @implementation Cenario
 
-+ (NSArray*) All {
-    static NSMutableArray* all = nil;
-    @synchronized(self) {
-        if (all == nil) {
-            all = [[NSMutableArray alloc] init];
-            for(int i = 0;;i++) {
-                NSString* file = [NSString stringWithFormat:@"Cena%d", i];
-                Cenario* item = [Cenario createFromFile: file];
-                if (!item)
-                    break;
-                [all addObject: item];
-            }
-        }
-    }
-    return all;
-}
-
-+ (id)createFromFile: (NSString*) file {
++ (id)fromFile: (NSString*) file {
     NSDictionary* dictionary = [Json fromFile: file];
     if (dictionary == nil)
         return nil;
@@ -62,15 +45,6 @@
         cena.objetos = objetos;
     }
     return cena;
-}
-
-+ (Cenario*) fromFile: (NSString*) name {
-    for (Cenario* item in [self All]) {
-        if ([item.arquivo isEqualToString:name]) {
-            return item;
-        }
-    }
-    return nil;
 }
 
 - (id)initWithImage: (NSString*) image andName: (NSString*) name {

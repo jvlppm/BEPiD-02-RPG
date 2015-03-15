@@ -22,8 +22,6 @@
 @property NSMutableArray* objetos;
 @property NSArray* inimigosPossiveis;
 
-+ (NSArray*) All;
-
 + (Cenario*) fromFile: (NSString*) file;
 
 - (id)initWithImage: (NSString*) image andName: (NSString*) name;

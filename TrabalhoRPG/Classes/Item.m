@@ -16,12 +16,8 @@
     @synchronized(self) {
         if (all == nil) {
             all = [[NSMutableArray alloc] init];
-            for(int i = 0;;i++) {
-                NSString* file = [NSString stringWithFormat:@"Item%d", i];
-                Item* item = [Item createFromFile: file];
-                if (!item)
-                    break;
-                [all addObject: item];
+            for (NSString* file in @[@"ItemChave"]) {
+                [all addObject: [Item createFromFile: file]];
             }
         }
     }

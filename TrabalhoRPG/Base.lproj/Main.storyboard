@@ -121,7 +121,7 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOj-p2-ndc">
                                 <rect key="frame" x="16" y="49" width="568" height="360"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tE4-zi-yCm">
                                 <rect key="frame" x="16" y="417" width="568" height="175"/>
@@ -194,7 +194,7 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7O-gc-l5Q" customClass="SKView">
                                 <rect key="frame" x="16" y="90" width="568" height="426"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="X7O-gc-l5Q" secondAttribute="height" multiplier="4:3" id="NEc-W9-Ha8"/>
                                 </constraints>

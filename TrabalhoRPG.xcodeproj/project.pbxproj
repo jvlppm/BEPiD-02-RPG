@@ -39,12 +39,28 @@
 		E82923851AB5E2880055E478 /* fogo.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923841AB5E2880055E478 /* fogo.json */; };
 		E82923871AB5F4250055E478 /* normal.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923861AB5F4250055E478 /* normal.json */; };
 		E829238A1AB5F9F90055E478 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82923891AB5F9F90055E478 /* GameOverViewController.m */; };
+		E82923941AB60BC40055E478 /* Cena0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E829238B1AB60BC40055E478 /* Cena0.jpg */; };
+		E82923951AB60BC40055E478 /* Cena0.json in Resources */ = {isa = PBXBuildFile; fileRef = E829238C1AB60BC40055E478 /* Cena0.json */; };
+		E82923961AB60BC40055E478 /* Cena1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E829238D1AB60BC40055E478 /* Cena1.jpg */; };
+		E82923971AB60BC40055E478 /* PortaCasa.json in Resources */ = {isa = PBXBuildFile; fileRef = E829238E1AB60BC40055E478 /* PortaCasa.json */; };
+		E82923981AB60BC40055E478 /* Cena2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E829238F1AB60BC40055E478 /* Cena2.jpg */; };
+		E82923991AB60BC40055E478 /* Cena2.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923901AB60BC40055E478 /* Cena2.json */; };
+		E829239A1AB60BC40055E478 /* Cena3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923911AB60BC40055E478 /* Cena3.jpg */; };
+		E829239B1AB60BC40055E478 /* Cena3.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923921AB60BC40055E478 /* Cena3.json */; };
+		E829239C1AB60BC40055E478 /* Cena4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923931AB60BC40055E478 /* Cena4.jpg */; };
+		E829239E1AB611110055E478 /* PortaCasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E829239D1AB611110055E478 /* PortaCasa.jpg */; };
+		E82923A11AB612D40055E478 /* QuartoCasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E829239F1AB612D40055E478 /* QuartoCasa.jpg */; };
+		E82923A21AB612D40055E478 /* QuartoCasa.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923A01AB612D40055E478 /* QuartoCasa.json */; };
+		E82923A41AB614790055E478 /* VarandaCasa.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923A31AB614790055E478 /* VarandaCasa.json */; };
+		E82923A61AB614810055E478 /* VarandaCasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923A51AB614810055E478 /* VarandaCasa.jpg */; };
+		E82923A91AB615E50055E478 /* PoraoCasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923A71AB615E50055E478 /* PoraoCasa.jpg */; };
+		E82923AA1AB615E50055E478 /* PoraoCasa.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923A81AB615E50055E478 /* PoraoCasa.json */; };
+		E82923AD1AB617AD0055E478 /* DentroPorao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923AB1AB617AD0055E478 /* DentroPorao.jpg */; };
+		E82923AE1AB617AD0055E478 /* DentroPorao.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923AC1AB617AD0055E478 /* DentroPorao.json */; };
+		E82923B01AB61BB20055E478 /* DentroPoraoChave.png in Resources */ = {isa = PBXBuildFile; fileRef = E82923AF1AB61BB20055E478 /* DentroPoraoChave.png */; };
 		E8560C0A1AB4D77600636FEF /* Item1.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C081AB4D77600636FEF /* Item1.json */; };
-		E8560C0B1AB4D77600636FEF /* Item0.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C091AB4D77600636FEF /* Item0.json */; };
+		E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C091AB4D77600636FEF /* ItemChave.json */; };
 		E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */; };
-		E8560C111AB4D7C700636FEF /* Cena1.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C0E1AB4D7C700636FEF /* Cena1.json */; };
-		E8560C121AB4D7C700636FEF /* Cena0.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C0F1AB4D7C700636FEF /* Cena0.json */; };
-		E8560C131AB4D7C700636FEF /* Cena0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8560C101AB4D7C700636FEF /* Cena0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,12 +132,28 @@
 		E82923861AB5F4250055E478 /* normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = normal.json; path = Ataques/normal.json; sourceTree = "<group>"; };
 		E82923881AB5F9F90055E478 /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
 		E82923891AB5F9F90055E478 /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
+		E829238B1AB60BC40055E478 /* Cena0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cena0.jpg; path = Cenas/Cena0.jpg; sourceTree = "<group>"; };
+		E829238C1AB60BC40055E478 /* Cena0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cena0.json; path = Cenas/Cena0.json; sourceTree = "<group>"; };
+		E829238D1AB60BC40055E478 /* Cena1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cena1.jpg; path = Cenas/Cena1.jpg; sourceTree = "<group>"; };
+		E829238E1AB60BC40055E478 /* PortaCasa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PortaCasa.json; path = Cenas/PortaCasa.json; sourceTree = "<group>"; };
+		E829238F1AB60BC40055E478 /* Cena2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cena2.jpg; path = Cenas/Cena2.jpg; sourceTree = "<group>"; };
+		E82923901AB60BC40055E478 /* Cena2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cena2.json; path = Cenas/Cena2.json; sourceTree = "<group>"; };
+		E82923911AB60BC40055E478 /* Cena3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cena3.jpg; path = Cenas/Cena3.jpg; sourceTree = "<group>"; };
+		E82923921AB60BC40055E478 /* Cena3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cena3.json; path = Cenas/Cena3.json; sourceTree = "<group>"; };
+		E82923931AB60BC40055E478 /* Cena4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cena4.jpg; path = Cenas/Cena4.jpg; sourceTree = "<group>"; };
+		E829239D1AB611110055E478 /* PortaCasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PortaCasa.jpg; path = Cenas/PortaCasa.jpg; sourceTree = "<group>"; };
+		E829239F1AB612D40055E478 /* QuartoCasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = QuartoCasa.jpg; path = Cenas/QuartoCasa.jpg; sourceTree = "<group>"; };
+		E82923A01AB612D40055E478 /* QuartoCasa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = QuartoCasa.json; path = Cenas/QuartoCasa.json; sourceTree = "<group>"; };
+		E82923A31AB614790055E478 /* VarandaCasa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = VarandaCasa.json; path = Cenas/VarandaCasa.json; sourceTree = "<group>"; };
+		E82923A51AB614810055E478 /* VarandaCasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = VarandaCasa.jpg; path = Cenas/VarandaCasa.jpg; sourceTree = "<group>"; };
+		E82923A71AB615E50055E478 /* PoraoCasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PoraoCasa.jpg; path = Cenas/PoraoCasa.jpg; sourceTree = "<group>"; };
+		E82923A81AB615E50055E478 /* PoraoCasa.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PoraoCasa.json; path = Cenas/PoraoCasa.json; sourceTree = "<group>"; };
+		E82923AB1AB617AD0055E478 /* DentroPorao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DentroPorao.jpg; path = Cenas/DentroPorao.jpg; sourceTree = "<group>"; };
+		E82923AC1AB617AD0055E478 /* DentroPorao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DentroPorao.json; path = Cenas/DentroPorao.json; sourceTree = "<group>"; };
+		E82923AF1AB61BB20055E478 /* DentroPoraoChave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DentroPoraoChave.png; path = Cenas/DentroPoraoChave.png; sourceTree = "<group>"; };
 		E8560C081AB4D77600636FEF /* Item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item1.json; path = Items/Item1.json; sourceTree = "<group>"; };
-		E8560C091AB4D77600636FEF /* Item0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item0.json; path = Items/Item0.json; sourceTree = "<group>"; };
+		E8560C091AB4D77600636FEF /* ItemChave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ItemChave.json; path = Items/ItemChave.json; sourceTree = "<group>"; };
 		E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-item-icon.png"; path = "Items/add-item-icon.png"; sourceTree = "<group>"; };
-		E8560C0E1AB4D7C700636FEF /* Cena1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cena1.json; path = Cenas/Cena1.json; sourceTree = "<group>"; };
-		E8560C0F1AB4D7C700636FEF /* Cena0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cena0.json; path = Cenas/Cena0.json; sourceTree = "<group>"; };
-		E8560C101AB4D7C700636FEF /* Cena0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cena0.jpg; path = Cenas/Cena0.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,9 +298,25 @@
 		CFE4F6D21AB39649003D3DB3 /* Cenas */ = {
 			isa = PBXGroup;
 			children = (
-				E8560C0E1AB4D7C700636FEF /* Cena1.json */,
-				E8560C0F1AB4D7C700636FEF /* Cena0.json */,
-				E8560C101AB4D7C700636FEF /* Cena0.jpg */,
+				E829238B1AB60BC40055E478 /* Cena0.jpg */,
+				E829238C1AB60BC40055E478 /* Cena0.json */,
+				E829238E1AB60BC40055E478 /* PortaCasa.json */,
+				E829239D1AB611110055E478 /* PortaCasa.jpg */,
+				E829239F1AB612D40055E478 /* QuartoCasa.jpg */,
+				E82923A01AB612D40055E478 /* QuartoCasa.json */,
+				E82923A71AB615E50055E478 /* PoraoCasa.jpg */,
+				E82923A81AB615E50055E478 /* PoraoCasa.json */,
+				E82923AB1AB617AD0055E478 /* DentroPorao.jpg */,
+				E82923AC1AB617AD0055E478 /* DentroPorao.json */,
+				E82923AF1AB61BB20055E478 /* DentroPoraoChave.png */,
+				E82923A51AB614810055E478 /* VarandaCasa.jpg */,
+				E82923A31AB614790055E478 /* VarandaCasa.json */,
+				E829238D1AB60BC40055E478 /* Cena1.jpg */,
+				E829238F1AB60BC40055E478 /* Cena2.jpg */,
+				E82923901AB60BC40055E478 /* Cena2.json */,
+				E82923911AB60BC40055E478 /* Cena3.jpg */,
+				E82923921AB60BC40055E478 /* Cena3.json */,
+				E82923931AB60BC40055E478 /* Cena4.jpg */,
 			);
 			name = Cenas;
 			sourceTree = "<group>";
@@ -294,7 +342,7 @@
 			children = (
 				E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */,
 				E8560C081AB4D77600636FEF /* Item1.json */,
-				E8560C091AB4D77600636FEF /* Item0.json */,
+				E8560C091AB4D77600636FEF /* ItemChave.json */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -397,17 +445,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82923971AB60BC40055E478 /* PortaCasa.json in Resources */,
+				E82923A41AB614790055E478 /* VarandaCasa.json in Resources */,
+				E82923961AB60BC40055E478 /* Cena1.jpg in Resources */,
 				E82923851AB5E2880055E478 /* fogo.json in Resources */,
 				E82923871AB5F4250055E478 /* normal.json in Resources */,
+				E82923A11AB612D40055E478 /* QuartoCasa.jpg in Resources */,
+				E82923A91AB615E50055E478 /* PoraoCasa.jpg in Resources */,
+				E82923AA1AB615E50055E478 /* PoraoCasa.json in Resources */,
+				E82923A21AB612D40055E478 /* QuartoCasa.json in Resources */,
+				E82923951AB60BC40055E478 /* Cena0.json in Resources */,
+				E82923991AB60BC40055E478 /* Cena2.json in Resources */,
 				E829237F1AB5D87A0055E478 /* Jogador.json in Resources */,
+				E82923AD1AB617AD0055E478 /* DentroPorao.jpg in Resources */,
+				E82923941AB60BC40055E478 /* Cena0.jpg in Resources */,
+				E82923A61AB614810055E478 /* VarandaCasa.jpg in Resources */,
+				E82923981AB60BC40055E478 /* Cena2.jpg in Resources */,
 				E82923801AB5D87A0055E478 /* Inimigo0.json in Resources */,
+				E82923AE1AB617AD0055E478 /* DentroPorao.json in Resources */,
+				E829239E1AB611110055E478 /* PortaCasa.jpg in Resources */,
+				E829239A1AB60BC40055E478 /* Cena3.jpg in Resources */,
 				CF5DC93D1AB0EF6D00760540 /* Main.storyboard in Resources */,
-				E8560C131AB4D7C700636FEF /* Cena0.jpg in Resources */,
+				E829239C1AB60BC40055E478 /* Cena4.jpg in Resources */,
 				E8560C0A1AB4D77600636FEF /* Item1.json in Resources */,
-				E8560C121AB4D7C700636FEF /* Cena0.json in Resources */,
-				E8560C111AB4D7C700636FEF /* Cena1.json in Resources */,
+				E82923B01AB61BB20055E478 /* DentroPoraoChave.png in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,
-				E8560C0B1AB4D77600636FEF /* Item0.json in Resources */,
+				E829239B1AB60BC40055E478 /* Cena3.json in Resources */,
+				E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */,
 				E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
 			);

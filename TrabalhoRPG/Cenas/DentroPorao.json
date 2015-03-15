@@ -1,0 +1,32 @@
+{
+	"imagem": "DentroPorao.jpg",
+	"nome": "Porão",
+	"descricao": "Ratos costumam aparecer neste porão",
+    "inimigosPossiveis": [ {
+                          "chance": 0.3,
+                          "arquivo": "Rato",
+                          "level_min": 1,
+                          "level_max": 2
+                          }],
+	"acoes": [
+		{
+            "texto": "Sair",
+			"tipo": "cena",
+			"arquivo": "PoraoCasa"
+		},
+	],
+	"objetos": [
+		{
+			"x": 0.3,
+			"y": 0.75,
+            "width": 0.15,
+            "height": 0.15,
+			"imagem": "DentroPoraoChave.png",
+			"transicao": {
+				"tipo": "item",
+				"arquivo": "ItemChave",
+                "excluiItens": ["ItemChave"]
+			}
+		}
+	]
+}

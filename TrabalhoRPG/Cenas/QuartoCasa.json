@@ -1,0 +1,17 @@
+{
+	"imagem": "QuartoCasa.jpg",
+	"nome": "Seu quarto",
+	"descricao": "Um quarto bonito, porém nada a se fazer",
+	"acoes": [
+		{
+            "texto": "Voltar para a sala",
+			"tipo": "cena",
+			"arquivo": "Cena0"
+		},
+        {
+            "texto": "Ir para a varanda",
+            "tipo": "cena",
+            "arquivo": "VarandaCasa"
+        },
+	]
+}

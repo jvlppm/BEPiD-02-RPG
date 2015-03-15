@@ -1,0 +1,12 @@
+{
+	"imagem": "VarandaCasa.jpg",
+	"nome": "Vista do quarto",
+	"descricao": "Uma bela vista e um dia muito bonito para se ficar em casa",
+	"acoes": [
+		{
+            "texto": "Voltar",
+			"tipo": "cena",
+			"arquivo": "QuartoCasa"
+		},
+	]
+}

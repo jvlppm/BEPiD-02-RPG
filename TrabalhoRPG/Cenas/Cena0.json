@@ -1,33 +1,22 @@
 {
 	"imagem": "Cena0.jpg",
-	"nome": "Cena inicial",
-	"descricao": "Descrição da cena",
-    "inimigosPossiveis": [ {
-                          "chance": 0.3,
-                          "arquivo": "Inimigo0",
-                          "level_min": 1,
-                          "level_max": 2
-                          }],
-	"acoes": [
+	"nome": "Casa",
+	"descricao": "Você está dentro de sua casa aconchegante",
+    "acoes": [
 		{
-            "texto": "Ação",
+            "texto": "Sair de casa",
 			"tipo": "cena",
-			"arquivo": "Cena1",
-            "requerItens": ["Item0"]
+			"arquivo": "PortaCasa"
 		},
-	],
-	"objetos": [
-		{
-			"x": 0.1,
-			"y": 0.5,
-            "width": 0.1,
-            "height": 0.5,
-			"imagem": "add-item-icon.png",
-			"transicao": {
-				"tipo": "item",
-				"arquivo": "Item0",
-                "excluiItens": ["Item0"]
-			}
-		}
+        {
+            "texto": "Ir para o quarto",
+            "tipo": "cena",
+            "arquivo": "QuartoCasa"
+        },
+        {
+            "texto": "Ir para o porão",
+            "tipo": "cena",
+            "arquivo": "PoraoCasa"
+        },
 	]
 }

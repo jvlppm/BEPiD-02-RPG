@@ -1,0 +1,17 @@
+{
+	"imagem": "PoraoCasa.jpg",
+	"nome": "Porão",
+	"descricao": "A parte mais descuidada desta casa",
+	"acoes": [
+		{
+            "texto": "Ir para a sala",
+			"tipo": "cena",
+			"arquivo": "Cena0"
+		},
+        {
+            "texto": "Descer",
+            "tipo": "cena",
+            "arquivo": "DentroPorao"
+        },
+	]
+}

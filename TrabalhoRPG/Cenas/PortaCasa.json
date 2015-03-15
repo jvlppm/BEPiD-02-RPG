@@ -1,0 +1,18 @@
+{
+	"imagem": "PortaCasa.jpg",
+	"nome": "Porta de casa",
+	"descricao": "A chave de casa não está na porta",
+	"acoes": [
+		{
+            "texto": "Voltar",
+			"tipo": "cena",
+			"arquivo": "Cena0"
+		},
+        {
+            "texto": "Sair com a chave",
+            "tipo": "cena",
+            "arquivo": "ForaCasa",
+            "requerItens": ["ItemChave"]
+        },
+	]
+}
