@@ -16,18 +16,51 @@
 + (id) unico {
     static EstadoJogo* singleton = nil;
     @synchronized(self) {
-        if (singleton == nil)
-            singleton = [[self alloc] initGame];
+        if (singleton == nil) {
+            singleton = [[self alloc] init];
+        }
     }
     return singleton;
 }
 
-- (id) initGame {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
-        self.cenaAtual = [Cenario fromFile:@"Cena0"];
     }
     return self;
 }
 
+- (void) descartarJogo {
+    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+}
+
+- (void) setCenaAtual:(Cenario *)cenaAtual {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:cenaAtual.arquivo forKey:@"ultimaCena"];
+    [defaults synchronize];
+}
+
+- (Cenario*) getCenaAtual {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    NSString* ultimaCena = [defaults objectForKey:@"ultimaCena"];
+    if (!ultimaCena)
+        ultimaCena = @"Cena0";
+    return [Cenario fromFile:ultimaCena];
+}
+
+- (BOOL)getNovoJogo {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    return ![defaults valueForKey:@"jogoEmAndamento"];
+}
+
+- (void)setNovoJogo:(BOOL)novoJogo {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    if (novoJogo)
+        [defaults removeObjectForKey:@"jogoEmAndamento"];
+    else
+        [defaults setValue:@"" forKey:@"jogoEmAndamento"];
+
+}
 @end

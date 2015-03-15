@@ -11,15 +11,6 @@
 
 @implementation Inventorio
 
-+ (NSMutableArray*) Itens {
-    static NSMutableArray* itens;
-    @synchronized(self) {
-        if (itens == nil)
-            itens = [[NSMutableArray alloc] init];
-    }
-    return itens;
-}
-
 + (id) unico {
     static Inventorio* unico = nil;
     @synchronized(self) {
@@ -30,38 +21,33 @@
 }
 
 + (BOOL) contemItem: (NSString*) named {
-    @synchronized(self) {
-        for (BolsaItem* bolsa in [self Itens]) {
-            if ([bolsa.item.arquivo isEqualToString:named]) {
-                return bolsa.quantidade > 0;
-            }
-        }
-    }
-    return NO;
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger quantity = [defaults integerForKey:named];
+    return quantity && quantity > 0;
 }
 
 + (void) adicionaItem: (Item*) item {
-    @synchronized(self) {
-        for (BolsaItem* bolsa in [self Itens]) {
-            if (bolsa.item == item) {
-                bolsa.quantidade++;
-                return;
-            }
-        }
-        [[self Itens] addObject:[[BolsaItem alloc] initWithItem: item quantity: 1]];
-    }
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger quantity = [defaults integerForKey:item.arquivo];
+    if(!quantity)
+        quantity = 1;
+    else
+        quantity++;
+    
+    [defaults setInteger:quantity forKey:item.arquivo];
+    [defaults synchronize];
 }
 
 + (void) usaItem: (Item*) item {
-    @synchronized(self) {
-        for (BolsaItem* bolsa in [self Itens]) {
-            if (bolsa.item == item) {
-                if (bolsa.quantidade-- <= 0)
-                    [[self Itens] removeObject:bolsa];
-                return;
-            }
-        }
-    }
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger quantity = [defaults integerForKey:item.arquivo];
+    if(!quantity || quantity <= 1)
+        quantity = 0;
+    else
+        quantity--;
+    
+    [defaults setInteger:quantity forKey:item.arquivo];
+    [defaults synchronize];
 }
 
 @end

@@ -37,6 +37,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [self refresh];
+    EstadoJogo* estado = [EstadoJogo unico];
+    estado.novoJogo = NO;
 }
 
 #pragma mark Scene Controller

@@ -13,6 +13,9 @@
 
 + (id) unico;
 
-@property Cenario* cenaAtual;
+@property (getter=getCenaAtual, setter=setCenaAtual:) Cenario* cenaAtual;
+@property (getter=getNovoJogo, setter=setNovoJogo:) BOOL novoJogo;
+
+- (void) descartarJogo;
 
 @end
