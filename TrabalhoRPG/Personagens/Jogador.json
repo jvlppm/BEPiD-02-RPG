@@ -9,11 +9,12 @@
         "base": 5,
         "porLevel": 3
     },
-    "ataques": ["normal", "fogo"],
+    "ataques": ["normal"],
     "status_ataque": {
         "fogo": 1.2
     },
     "status_defesa": {
-        "agua": 0.8
+        "agua": 0.8,
+        "veneno": 1.2
     }
 }

@@ -68,7 +68,9 @@
 		E82923CC1AB6377D0055E478 /* CampoAberto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923CB1AB6377D0055E478 /* CampoAberto.jpg */; };
 		E8560C0A1AB4D77600636FEF /* Item1.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C081AB4D77600636FEF /* Item1.json */; };
 		E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C091AB4D77600636FEF /* ItemChave.json */; };
-		E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */; };
+		E8FA104C1AB648B3002B8A38 /* Cobra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA104A1AB648B3002B8A38 /* Cobra.jpg */; };
+		E8FA104D1AB648B3002B8A38 /* Cobra.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA104B1AB648B3002B8A38 /* Cobra.json */; };
+		E8FA104F1AB64AF7002B8A38 /* ItemChave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA104E1AB64AF7002B8A38 /* ItemChave.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,7 +171,9 @@
 		E82923CB1AB6377D0055E478 /* CampoAberto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CampoAberto.jpg; path = Cenas/CampoAberto.jpg; sourceTree = "<group>"; };
 		E8560C081AB4D77600636FEF /* Item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item1.json; path = Items/Item1.json; sourceTree = "<group>"; };
 		E8560C091AB4D77600636FEF /* ItemChave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ItemChave.json; path = Items/ItemChave.json; sourceTree = "<group>"; };
-		E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-item-icon.png"; path = "Items/add-item-icon.png"; sourceTree = "<group>"; };
+		E8FA104A1AB648B3002B8A38 /* Cobra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cobra.jpg; path = Personagens/Cobra.jpg; sourceTree = "<group>"; };
+		E8FA104B1AB648B3002B8A38 /* Cobra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cobra.json; path = Personagens/Cobra.json; sourceTree = "<group>"; };
+		E8FA104E1AB64AF7002B8A38 /* ItemChave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ItemChave.jpg; path = Items/ItemChave.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,9 +361,7 @@
 		E81E525A1AB494DB00E817D6 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				E82923B11AB61D3A0055E478 /* Rato.json */,
-				E82923B21AB61D3A0055E478 /* Rato.png */,
-				E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */,
+				E8FA104E1AB64AF7002B8A38 /* ItemChave.jpg */,
 				E8560C081AB4D77600636FEF /* Item1.json */,
 				E8560C091AB4D77600636FEF /* ItemChave.json */,
 			);
@@ -369,6 +371,10 @@
 		E81F31DC1AB525A9003B0BA4 /* Personagens */ = {
 			isa = PBXGroup;
 			children = (
+				E8FA104A1AB648B3002B8A38 /* Cobra.jpg */,
+				E8FA104B1AB648B3002B8A38 /* Cobra.json */,
+				E82923B11AB61D3A0055E478 /* Rato.json */,
+				E82923B21AB61D3A0055E478 /* Rato.png */,
 				E82923C31AB6332E0055E478 /* Macaco.jpg */,
 				E82923C41AB6332E0055E478 /* Macaco.json */,
 				E82923BD1AB62ED20055E478 /* CegonhaCabecaBaleia.jpg */,
@@ -495,17 +501,19 @@
 				E82923801AB5D87A0055E478 /* Inimigo0.json in Resources */,
 				E82923AE1AB617AD0055E478 /* DentroPorao.json in Resources */,
 				E829239E1AB611110055E478 /* PortaCasa.jpg in Resources */,
+				E8FA104F1AB64AF7002B8A38 /* ItemChave.jpg in Resources */,
 				CF5DC93D1AB0EF6D00760540 /* Main.storyboard in Resources */,
 				E82923C01AB62ED20055E478 /* CegonhaCabecaBaleia.json in Resources */,
 				E82923C61AB6332E0055E478 /* Macaco.json in Resources */,
+				E8FA104D1AB648B3002B8A38 /* Cobra.json in Resources */,
 				E8560C0A1AB4D77600636FEF /* Item1.json in Resources */,
 				E82923B01AB61BB20055E478 /* DentroPoraoChave.png in Resources */,
 				E82923CC1AB6377D0055E478 /* CampoAberto.jpg in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,
 				E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */,
-				E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */,
 				E82923C21AB62FE90055E478 /* voador.json in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
+				E8FA104C1AB648B3002B8A38 /* Cobra.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,10 +3,16 @@
 	"nome": "Estrada bonita",
 	"descricao": "Estrada bonita perto de casa",
     "inimigosPossiveis": [ {
-                          "chance": 0.3,
+                          "chance": 0.15,
                           "arquivo": "CegonhaCabecaBaleia",
                           "level_min": 1,
                           "level_max": 2
+                          },
+                          {
+                          "chance": 0.2,
+                          "arquivo": "Rato",
+                          "level_min": 2,
+                          "level_max": 3
                           }],
 	"acoes": [
 		{
@@ -14,5 +20,10 @@
 			"tipo": "cena",
 			"arquivo": "ForaCasa"
 		},
+        {
+            "texto": "Sair da estrada",
+            "tipo": "cena",
+            "arquivo": "Pantano"
+        },
 	]
 }
