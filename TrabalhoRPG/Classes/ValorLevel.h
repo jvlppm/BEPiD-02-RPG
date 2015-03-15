@@ -12,6 +12,7 @@
 
 @interface ValorLevel : NSObject
 
-- (int) calculaValor: (int) level;
++ (ValorLevel*) fromDictionary: (NSDictionary*) data;
+- (float) calculaValor: (float) level;
 
 @end

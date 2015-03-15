@@ -18,5 +18,6 @@
 @property NSArray* ataques;
 
 @property int level;
+@property ValorLevel* energia;
 
 @end

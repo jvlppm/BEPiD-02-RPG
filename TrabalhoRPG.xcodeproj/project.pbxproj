@@ -33,6 +33,7 @@
 		E81E52521AB46B2200E817D6 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E81E52511AB46B2200E817D6 /* GameScene.m */; };
 		E81E52551AB491AD00E817D6 /* CenaItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81E52541AB491AD00E817D6 /* CenaItemViewController.m */; };
 		E81F31D71AB4F2A2003B0BA4 /* BattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E81F31D61AB4F2A2003B0BA4 /* BattleViewController.m */; };
+		E81F31DB1AB5259F003B0BA4 /* Inimigo0.json in Resources */ = {isa = PBXBuildFile; fileRef = E81F31DA1AB5259F003B0BA4 /* Inimigo0.json */; };
 		E8560C0A1AB4D77600636FEF /* Item1.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C081AB4D77600636FEF /* Item1.json */; };
 		E8560C0B1AB4D77600636FEF /* Item0.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C091AB4D77600636FEF /* Item0.json */; };
 		E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */; };
@@ -102,6 +103,7 @@
 		E81E52541AB491AD00E817D6 /* CenaItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenaItemViewController.m; sourceTree = "<group>"; };
 		E81F31D51AB4F2A2003B0BA4 /* BattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleViewController.h; sourceTree = "<group>"; };
 		E81F31D61AB4F2A2003B0BA4 /* BattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleViewController.m; sourceTree = "<group>"; };
+		E81F31DA1AB5259F003B0BA4 /* Inimigo0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Inimigo0.json; path = Inimigos/Inimigo0.json; sourceTree = "<group>"; };
 		E8560C081AB4D77600636FEF /* Item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item1.json; path = Items/Item1.json; sourceTree = "<group>"; };
 		E8560C091AB4D77600636FEF /* Item0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item0.json; path = Items/Item0.json; sourceTree = "<group>"; };
 		E8560C0C1AB4D7BA00636FEF /* add-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "add-item-icon.png"; path = "Items/add-item-icon.png"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				E81E525A1AB494DB00E817D6 /* Items */,
 				CFE4F6D21AB39649003D3DB3 /* Cenas */,
+				E81F31DC1AB525A9003B0BA4 /* Inimigos */,
 				CFEC2D4A1AB0F13B0001709A /* Classes */,
 				CF5DC9351AB0EF6D00760540 /* AppDelegate.h */,
 				CF5DC9361AB0EF6D00760540 /* AppDelegate.m */,
@@ -279,6 +282,14 @@
 			name = Items;
 			sourceTree = "<group>";
 		};
+		E81F31DC1AB525A9003B0BA4 /* Inimigos */ = {
+			isa = PBXGroup;
+			children = (
+				E81F31DA1AB5259F003B0BA4 /* Inimigo0.json */,
+			);
+			name = Inimigos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +379,7 @@
 				E8560C0B1AB4D77600636FEF /* Item0.json in Resources */,
 				E8560C0D1AB4D7BA00636FEF /* add-item-icon.png in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
+				E81F31DB1AB5259F003B0BA4 /* Inimigo0.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
