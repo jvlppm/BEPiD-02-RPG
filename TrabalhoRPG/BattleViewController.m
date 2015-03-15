@@ -65,10 +65,14 @@
     
     float atMult = [self.inimigo getAtaqueMult: opcao.tipo];
     float defMult = [estado.jogador getDefesaMult: opcao.tipo];
+    
+    float ataqueInimigo = [opcao.forca calculaValor:_inimigo.level] * defMult * atMult;
 
-    estado.energiaJogador -= [opcao.forca calculaValor:_inimigo.level] * defMult * atMult;
-    self.tableAtaques.userInteractionEnabled = true;
-    self.tableAtaques.alpha = 1;
+    estado.energiaJogador -= ataqueInimigo;
+    if (estado.energiaJogador > 0) {
+        self.tableAtaques.userInteractionEnabled = true;
+        self.tableAtaques.alpha = 1;
+    }
     [self refresh];
 }
 

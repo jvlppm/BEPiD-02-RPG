@@ -67,15 +67,16 @@
         [defaults removeObjectForKey:@"jogoEmAndamento"];
     else
         [defaults setValue:@"" forKey:@"jogoEmAndamento"];
-
 }
 
 - (float)getEnergiaJogador {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    float energia = [defaults floatForKey:@"energiaJogador"];
-    if (!energia)
-        energia = [_jogador.energia calculaValor:[self getLevel]];
-    return energia;
+    
+    id value = [defaults valueForKey:@"energiaJogador"];
+    if (!value)
+        return [_jogador.energia calculaValor:[self getLevel]];
+    
+    return [value floatValue];
 }
 
 - (void)setEnergiaJogador:(float)value {
