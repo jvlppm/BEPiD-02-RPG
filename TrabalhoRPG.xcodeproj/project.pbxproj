@@ -81,6 +81,8 @@
 		E8FA10611AB66B76002B8A38 /* EstradaGramadaGalho.png in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10601AB66B76002B8A38 /* EstradaGramadaGalho.png */; };
 		E8FA10631AB66BC2002B8A38 /* ItemGalho.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10621AB66BC2002B8A38 /* ItemGalho.json */; };
 		E8FA10651AB66D81002B8A38 /* galho.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10641AB66D81002B8A38 /* galho.json */; };
+		E8FA10681AB67D35002B8A38 /* Aranha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10661AB67D35002B8A38 /* Aranha.jpg */; };
+		E8FA10691AB67D35002B8A38 /* Aranha.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10671AB67D35002B8A38 /* Aranha.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +196,8 @@
 		E8FA10601AB66B76002B8A38 /* EstradaGramadaGalho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EstradaGramadaGalho.png; path = Cenas/EstradaGramadaGalho.png; sourceTree = "<group>"; };
 		E8FA10621AB66BC2002B8A38 /* ItemGalho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ItemGalho.json; path = Items/ItemGalho.json; sourceTree = "<group>"; };
 		E8FA10641AB66D81002B8A38 /* galho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = galho.json; path = Ataques/galho.json; sourceTree = "<group>"; };
+		E8FA10661AB67D35002B8A38 /* Aranha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Aranha.jpg; path = Personagens/Aranha.jpg; sourceTree = "<group>"; };
+		E8FA10671AB67D35002B8A38 /* Aranha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Aranha.json; path = Personagens/Aranha.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +402,8 @@
 		E81F31DC1AB525A9003B0BA4 /* Personagens */ = {
 			isa = PBXGroup;
 			children = (
+				E8FA10661AB67D35002B8A38 /* Aranha.jpg */,
+				E8FA10671AB67D35002B8A38 /* Aranha.json */,
 				E8FA105A1AB6665D002B8A38 /* Zebra.jpg */,
 				E8FA105B1AB6665D002B8A38 /* Zebra.json */,
 				E8FA104A1AB648B3002B8A38 /* Cobra.jpg */,
@@ -517,6 +523,7 @@
 				E8FA10611AB66B76002B8A38 /* EstradaGramadaGalho.png in Resources */,
 				E82923C91AB633DA0055E478 /* Pantano.jpg in Resources */,
 				E82923A11AB612D40055E478 /* QuartoCasa.jpg in Resources */,
+				E8FA10691AB67D35002B8A38 /* Aranha.json in Resources */,
 				E8FA10651AB66D81002B8A38 /* galho.json in Resources */,
 				E82923A91AB615E50055E478 /* PoraoCasa.jpg in Resources */,
 				E8FA10631AB66BC2002B8A38 /* ItemGalho.json in Resources */,
@@ -535,6 +542,7 @@
 				E82923BF1AB62ED20055E478 /* CegonhaCabecaBaleia.jpg in Resources */,
 				E82923B71AB61F030055E478 /* ForaCasa.jpg in Resources */,
 				E82923801AB5D87A0055E478 /* Inimigo0.json in Resources */,
+				E8FA10681AB67D35002B8A38 /* Aranha.jpg in Resources */,
 				E82923AE1AB617AD0055E478 /* DentroPorao.json in Resources */,
 				E829239E1AB611110055E478 /* PortaCasa.jpg in Resources */,
 				E8FA10591AB66500002B8A38 /* EstradaGramada.json in Resources */,

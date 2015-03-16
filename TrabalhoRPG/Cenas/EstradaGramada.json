@@ -11,8 +11,8 @@
                           {
                           "chance": 0.2,
                           "arquivo": "Macaco",
-                          "level_min": 2,
-                          "level_max": 3
+                          "level_min": 6,
+                          "level_max": 8
                           },
                           {
                           "chance": 0.3,

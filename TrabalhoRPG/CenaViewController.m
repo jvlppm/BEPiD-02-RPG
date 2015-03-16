@@ -73,13 +73,15 @@
 }
 
 - (void) verificaBatalha: (Cenario*) atual {
+    EstadoJogo* estadoJogo = [EstadoJogo unico];
     
     for(InimigoPossivel* ini in atual.inimigosPossiveis) {
         float rnd = ((float)arc4random()/0x100000000);
-        if (ini.chance >= rnd) {
+        if (ini.chance >= rnd && (!ini.idInimigo || ![estadoJogo contemId: ini.idInimigo])) {
             BattleViewController* viewController = (BattleViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"battleView"];
             viewController.inimigo = [Personagem fromDictionary:[Json fromFile:ini.arquivo]];
             viewController.inimigo.level = (int)[CenaViewController randomFloatBetween:ini.level_min andLargerFloat:ini.level_max];
+            viewController.idInimigo = ini.idInimigo;
             [self showViewController:viewController sender:self];
             break;
         }

@@ -17,6 +17,7 @@
     obj.chance = [data[@"chance"] floatValue];
     obj.level_min = [data[@"level_min"] floatValue];
     obj.level_max = [data[@"level_max"] floatValue];
+    obj.idInimigo = data[@"id"];
     
     return obj;
 }

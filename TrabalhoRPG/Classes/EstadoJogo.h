@@ -28,4 +28,7 @@
 
 - (void) adicionaAtaque: (NSString*) ataque;
 
+- (void) adicionaId: (NSString*) key;
+- (BOOL) contemId: (NSString*) key;
+
 @end

@@ -9,10 +9,11 @@
                           "level_max": 2
                           },
                           {
-                          "chance": 0.2,
+                          "id": "macaco",
+                          "chance": 0.3,
                           "arquivo": "Macaco",
-                          "level_min": 2,
-                          "level_max": 4
+                          "level_min": 10,
+                          "level_max": 10
                           }],
 	"acoes": [
 		{

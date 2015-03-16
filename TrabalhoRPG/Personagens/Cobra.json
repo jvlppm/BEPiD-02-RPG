@@ -6,8 +6,13 @@
         "porLevel": 6
     },
     "xp": {
-        "base": 20,
-        "porLevel": 6
+        "base": 10,
+        "porLevel": 3
     },
-    "ataques": ["normal"]
+    "ataques": ["normal"],
+    "status_defesa": {
+        "normal": 0.5,
+        "galho": 0.8,
+        "veneno": 1.2
+    }
 }

@@ -3,16 +3,16 @@
 	"nome": "Estrada bonita",
 	"descricao": "Estrada bonita perto de casa",
     "inimigosPossiveis": [ {
-                          "chance": 0.15,
+                          "chance": 0.2,
                           "arquivo": "CegonhaCabecaBaleia",
                           "level_min": 1,
                           "level_max": 2
                           },
                           {
-                          "chance": 0.2,
+                          "chance": 0.25,
                           "arquivo": "Rato",
                           "level_min": 2,
-                          "level_max": 3
+                          "level_max": 4
                           },
                           ],
 	"acoes": [

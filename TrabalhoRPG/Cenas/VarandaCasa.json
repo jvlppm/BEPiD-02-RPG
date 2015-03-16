@@ -2,6 +2,19 @@
 	"imagem": "VarandaCasa.jpg",
 	"nome": "Vista do quarto",
 	"descricao": "Uma bela vista e um dia muito bonito para se ficar em casa",
+    "inimigosPossiveis": [ {
+                          "chance": 0.05,
+                          "arquivo": "CegonhaCabecaBaleia",
+                          "level_min": 1,
+                          "level_max": 4
+                          },
+                          {
+                          "chance": 0.3,
+                          "arquivo": "Aranha",
+                          "level_min": 2,
+                          "level_max": 3
+                          },
+                          ],
 	"acoes": [
 		{
             "texto": "Voltar",

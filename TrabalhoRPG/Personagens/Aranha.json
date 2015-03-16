@@ -1,0 +1,13 @@
+{
+    "nome": "Aranha",
+    "imagem": "Aranha.jpg",
+    "energia": {
+        "base": 12,
+        "porLevel": 2
+    },
+    "xp": {
+        "base": 8,
+        "porLevel": 3
+    },
+    "ataques": ["normal"]
+}

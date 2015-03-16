@@ -3,10 +3,11 @@
 	"nome": "Porão",
 	"descricao": "Ratos costumam aparecer neste porão",
     "inimigosPossiveis": [ {
-                          "chance": 0.3,
+                          "id": "rato-chave",
+                          "chance": 1,
                           "arquivo": "Rato",
-                          "level_min": 4,
-                          "level_max": 4
+                          "level_min": 3,
+                          "level_max": 3
                           }],
 	"acoes": [
 		{

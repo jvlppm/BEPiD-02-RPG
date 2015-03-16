@@ -5,8 +5,8 @@
     "inimigosPossiveis": [ {
                           "chance": 0.3,
                           "arquivo": "Cobra",
-                          "level_min": 1,
-                          "level_max": 2
+                          "level_min": 4,
+                          "level_max": 6
                           }],
 	"acoes": [
 		{

@@ -12,5 +12,6 @@
 @interface BattleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property Personagem* inimigo;
+@property NSString* idInimigo;
 
 @end

@@ -9,5 +9,15 @@
         "base": 15,
         "porLevel": 5
     },
-    "ataques": ["normal"]
+    "ataques": ["normal", "normal", "galho"],
+    "status_defesa": {
+        "normal": 0.5,
+        "galho": 0.6,
+        "veneno": 1.2
+    },
+    "status_ataque": {
+        "normal": 1,
+        "galho": 1.2,
+        "veneno": 1.2
+    },
 }

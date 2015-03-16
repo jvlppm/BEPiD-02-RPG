@@ -146,4 +146,15 @@
     [novosAtaques addObject:ataque];
     self.ataques = novosAtaques;
 }
+
+- (void)adicionaId:(NSString *)key {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:YES forKey: key];
+    [defaults synchronize];
+}
+
+- (BOOL) contemId: (NSString*) key {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    return [defaults boolForKey:key];
+}
 @end

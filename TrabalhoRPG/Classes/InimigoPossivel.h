@@ -16,5 +16,6 @@
 @property float chance;
 @property int level_min;
 @property int level_max;
+@property NSString* idInimigo;
 
 @end

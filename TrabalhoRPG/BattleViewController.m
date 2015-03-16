@@ -33,6 +33,10 @@
     self.ivInimigo.image = [UIImage imageNamed:self.inimigo.imagem];
     
     energiaInimigo = [self.inimigo.energia calculaValor:self.inimigo.level];
+    if (self.idInimigo) {
+        self.navigationItem.hidesBackButton = YES;
+    }
+        
     [self refresh];
 }
 
@@ -71,6 +75,8 @@
         }
         
         [self.navigationController popViewControllerAnimated:YES];
+        if (self.idInimigo)
+            [estado adicionaId: self.idInimigo];
         return;
     }
     
