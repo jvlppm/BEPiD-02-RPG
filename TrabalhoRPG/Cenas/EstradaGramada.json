@@ -1,0 +1,30 @@
+{
+	"imagem": "EstradaGramada.jpg",
+	"nome": "Estrada gramada",
+	"descricao": "Estradinha em um campo gramado",
+    "inimigosPossiveis": [ {
+                          "chance": 0.15,
+                          "arquivo": "CegonhaCabecaBaleia",
+                          "level_min": 1,
+                          "level_max": 2
+                          },
+                          {
+                          "chance": 0.2,
+                          "arquivo": "Macaco",
+                          "level_min": 2,
+                          "level_max": 3
+                          },
+                          {
+                          "chance": 0.3,
+                          "arquivo": "Zebra",
+                          "level_min": 3,
+                          "level_max": 4
+                          }],
+	"acoes": [
+		{
+            "texto": "Ir para estradinha",
+			"tipo": "cena",
+			"arquivo": "EstradinhaCasa"
+		},
+	]
+}

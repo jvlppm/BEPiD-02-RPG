@@ -1,0 +1,13 @@
+{
+    "nome": "Zebra",
+    "imagem": "Zebra.jpg",
+    "energia": {
+        "base": 15,
+        "porLevel": 4
+    },
+    "xp": {
+        "base": 30,
+        "porLevel": 5
+    },
+    "ataques": ["normal"]
+}

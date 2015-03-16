@@ -74,6 +74,10 @@
 		E8FA10521AB64C10002B8A38 /* Floresta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10501AB64C10002B8A38 /* Floresta.jpg */; };
 		E8FA10531AB64C10002B8A38 /* Floresta.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10511AB64C10002B8A38 /* Floresta.json */; };
 		E8FA10551AB65FB0002B8A38 /* Cama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10541AB65FB0002B8A38 /* Cama.jpg */; };
+		E8FA10581AB66500002B8A38 /* EstradaGramada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10561AB66500002B8A38 /* EstradaGramada.jpg */; };
+		E8FA10591AB66500002B8A38 /* EstradaGramada.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10571AB66500002B8A38 /* EstradaGramada.json */; };
+		E8FA105C1AB6665D002B8A38 /* Zebra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA105A1AB6665D002B8A38 /* Zebra.jpg */; };
+		E8FA105D1AB6665D002B8A38 /* Zebra.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA105B1AB6665D002B8A38 /* Zebra.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +184,10 @@
 		E8FA10501AB64C10002B8A38 /* Floresta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Floresta.jpg; path = Cenas/Floresta.jpg; sourceTree = "<group>"; };
 		E8FA10511AB64C10002B8A38 /* Floresta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Floresta.json; path = Cenas/Floresta.json; sourceTree = "<group>"; };
 		E8FA10541AB65FB0002B8A38 /* Cama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cama.jpg; path = Items/Cama.jpg; sourceTree = "<group>"; };
+		E8FA10561AB66500002B8A38 /* EstradaGramada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = EstradaGramada.jpg; path = Cenas/EstradaGramada.jpg; sourceTree = "<group>"; };
+		E8FA10571AB66500002B8A38 /* EstradaGramada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = EstradaGramada.json; path = Cenas/EstradaGramada.json; sourceTree = "<group>"; };
+		E8FA105A1AB6665D002B8A38 /* Zebra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Zebra.jpg; path = Personagens/Zebra.jpg; sourceTree = "<group>"; };
+		E8FA105B1AB6665D002B8A38 /* Zebra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Zebra.json; path = Personagens/Zebra.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +354,8 @@
 				E82923C71AB633DA0055E478 /* Pantano.jpg */,
 				E82923C81AB633DA0055E478 /* Pantano.json */,
 				E82923CB1AB6377D0055E478 /* CampoAberto.jpg */,
+				E8FA10561AB66500002B8A38 /* EstradaGramada.jpg */,
+				E8FA10571AB66500002B8A38 /* EstradaGramada.json */,
 			);
 			name = Cenas;
 			sourceTree = "<group>";
@@ -380,6 +390,8 @@
 		E81F31DC1AB525A9003B0BA4 /* Personagens */ = {
 			isa = PBXGroup;
 			children = (
+				E8FA105A1AB6665D002B8A38 /* Zebra.jpg */,
+				E8FA105B1AB6665D002B8A38 /* Zebra.json */,
 				E8FA104A1AB648B3002B8A38 /* Cobra.jpg */,
 				E8FA104B1AB648B3002B8A38 /* Cobra.json */,
 				E82923B11AB61D3A0055E478 /* Rato.json */,
@@ -489,6 +501,7 @@
 				E82923C51AB6332E0055E478 /* Macaco.jpg in Resources */,
 				E82923B81AB61F030055E478 /* ForaCasa.json in Resources */,
 				E82923851AB5E2880055E478 /* fogo.json in Resources */,
+				E8FA105C1AB6665D002B8A38 /* Zebra.jpg in Resources */,
 				E82923CA1AB633DA0055E478 /* Pantano.json in Resources */,
 				E82923BC1AB61FE20055E478 /* EstradinhaCasa.json in Resources */,
 				E82923871AB5F4250055E478 /* normal.json in Resources */,
@@ -512,10 +525,12 @@
 				E82923801AB5D87A0055E478 /* Inimigo0.json in Resources */,
 				E82923AE1AB617AD0055E478 /* DentroPorao.json in Resources */,
 				E829239E1AB611110055E478 /* PortaCasa.jpg in Resources */,
+				E8FA10591AB66500002B8A38 /* EstradaGramada.json in Resources */,
 				E8FA104F1AB64AF7002B8A38 /* ItemChave.jpg in Resources */,
 				CF5DC93D1AB0EF6D00760540 /* Main.storyboard in Resources */,
 				E82923C01AB62ED20055E478 /* CegonhaCabecaBaleia.json in Resources */,
 				E82923C61AB6332E0055E478 /* Macaco.json in Resources */,
+				E8FA10581AB66500002B8A38 /* EstradaGramada.jpg in Resources */,
 				E8FA104D1AB648B3002B8A38 /* Cobra.json in Resources */,
 				E8FA10531AB64C10002B8A38 /* Floresta.json in Resources */,
 				E8560C0A1AB4D77600636FEF /* Cama.json in Resources */,
@@ -523,6 +538,7 @@
 				E82923CC1AB6377D0055E478 /* CampoAberto.jpg in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,
 				E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */,
+				E8FA105D1AB6665D002B8A38 /* Zebra.json in Resources */,
 				E82923C21AB62FE90055E478 /* voador.json in Resources */,
 				CF5DC93F1AB0EF6D00760540 /* Images.xcassets in Resources */,
 				E8FA104C1AB648B3002B8A38 /* Cobra.jpg in Resources */,

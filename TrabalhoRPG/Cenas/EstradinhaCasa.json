@@ -13,13 +13,19 @@
                           "arquivo": "Rato",
                           "level_min": 2,
                           "level_max": 3
-                          }],
+                          },
+                          ],
 	"acoes": [
 		{
             "texto": "Ir para casa",
 			"tipo": "cena",
 			"arquivo": "ForaCasa"
 		},
+        {
+            "texto": "Seguir estrada",
+            "tipo": "cena",
+            "arquivo": "EstradaGramada"
+        },
         {
             "texto": "Sair da estrada",
             "tipo": "cena",
