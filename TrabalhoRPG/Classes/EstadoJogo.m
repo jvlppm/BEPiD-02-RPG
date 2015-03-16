@@ -112,4 +112,10 @@
     [defaults setObject:value forKey:@"ataquesJogador"];
     [defaults synchronize];
 }
+
+- (void)adicionaAtaque:(NSString *)ataque {
+    NSMutableArray* novosAtaques = [[NSMutableArray alloc] initWithArray:self.ataques];
+    [novosAtaques addObject:ataque];
+    self.ataques = novosAtaques;
+}
 @end

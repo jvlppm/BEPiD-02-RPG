@@ -24,4 +24,6 @@
 
 - (void) descartarJogo;
 
+- (void) adicionaAtaque: (NSString*) ataque;
+
 @end

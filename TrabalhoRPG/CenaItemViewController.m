@@ -28,11 +28,16 @@
     self.ivItem.image = [UIImage imageNamed:self.item.imagem];
     self.tvDescricao.text = self.item.descricao;
     
+    EstadoJogo* estado = [EstadoJogo unico];
+
     if ([self.item.nome isEqualToString:@"Cama"] ) {
-        EstadoJogo* estado = [EstadoJogo unico];
         estado.energiaJogador = [estado.jogador.energia calculaValor:estado.level];
     }
     else {
+        if ([self.item.nome isEqualToString:@"Galho"]) {
+            [estado adicionaAtaque: @"galho"];
+        }
+        
         [Inventorio adicionaItem:self.item];
     }
 }

@@ -78,6 +78,9 @@
 		E8FA10591AB66500002B8A38 /* EstradaGramada.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10571AB66500002B8A38 /* EstradaGramada.json */; };
 		E8FA105C1AB6665D002B8A38 /* Zebra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA105A1AB6665D002B8A38 /* Zebra.jpg */; };
 		E8FA105D1AB6665D002B8A38 /* Zebra.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA105B1AB6665D002B8A38 /* Zebra.json */; };
+		E8FA10611AB66B76002B8A38 /* EstradaGramadaGalho.png in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10601AB66B76002B8A38 /* EstradaGramadaGalho.png */; };
+		E8FA10631AB66BC2002B8A38 /* ItemGalho.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10621AB66BC2002B8A38 /* ItemGalho.json */; };
+		E8FA10651AB66D81002B8A38 /* galho.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10641AB66D81002B8A38 /* galho.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +191,9 @@
 		E8FA10571AB66500002B8A38 /* EstradaGramada.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = EstradaGramada.json; path = Cenas/EstradaGramada.json; sourceTree = "<group>"; };
 		E8FA105A1AB6665D002B8A38 /* Zebra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Zebra.jpg; path = Personagens/Zebra.jpg; sourceTree = "<group>"; };
 		E8FA105B1AB6665D002B8A38 /* Zebra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Zebra.json; path = Personagens/Zebra.json; sourceTree = "<group>"; };
+		E8FA10601AB66B76002B8A38 /* EstradaGramadaGalho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EstradaGramadaGalho.png; path = Cenas/EstradaGramadaGalho.png; sourceTree = "<group>"; };
+		E8FA10621AB66BC2002B8A38 /* ItemGalho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ItemGalho.json; path = Items/ItemGalho.json; sourceTree = "<group>"; };
+		E8FA10641AB66D81002B8A38 /* galho.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = galho.json; path = Ataques/galho.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +362,7 @@
 				E82923CB1AB6377D0055E478 /* CampoAberto.jpg */,
 				E8FA10561AB66500002B8A38 /* EstradaGramada.jpg */,
 				E8FA10571AB66500002B8A38 /* EstradaGramada.json */,
+				E8FA10601AB66B76002B8A38 /* EstradaGramadaGalho.png */,
 			);
 			name = Cenas;
 			sourceTree = "<group>";
@@ -383,6 +390,7 @@
 				E8FA10541AB65FB0002B8A38 /* Cama.jpg */,
 				E8560C081AB4D77600636FEF /* Cama.json */,
 				E8560C091AB4D77600636FEF /* ItemChave.json */,
+				E8FA10621AB66BC2002B8A38 /* ItemGalho.json */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -409,6 +417,7 @@
 		E82923831AB5E2760055E478 /* Ataques */ = {
 			isa = PBXGroup;
 			children = (
+				E8FA10641AB66D81002B8A38 /* galho.json */,
 				E82923C11AB62FE90055E478 /* voador.json */,
 				E82923841AB5E2880055E478 /* fogo.json */,
 				E82923861AB5F4250055E478 /* normal.json */,
@@ -505,9 +514,12 @@
 				E82923CA1AB633DA0055E478 /* Pantano.json in Resources */,
 				E82923BC1AB61FE20055E478 /* EstradinhaCasa.json in Resources */,
 				E82923871AB5F4250055E478 /* normal.json in Resources */,
+				E8FA10611AB66B76002B8A38 /* EstradaGramadaGalho.png in Resources */,
 				E82923C91AB633DA0055E478 /* Pantano.jpg in Resources */,
 				E82923A11AB612D40055E478 /* QuartoCasa.jpg in Resources */,
+				E8FA10651AB66D81002B8A38 /* galho.json in Resources */,
 				E82923A91AB615E50055E478 /* PoraoCasa.jpg in Resources */,
+				E8FA10631AB66BC2002B8A38 /* ItemGalho.json in Resources */,
 				E8FA10521AB64C10002B8A38 /* Floresta.jpg in Resources */,
 				E82923AA1AB615E50055E478 /* PoraoCasa.json in Resources */,
 				E82923A21AB612D40055E478 /* QuartoCasa.json in Resources */,

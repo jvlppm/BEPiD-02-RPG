@@ -1,0 +1,12 @@
+{
+    "tipo": "galho",
+    "nome": "Usar galho",
+    "forca": {
+        "base": 5,
+        "porLevel": 7
+    },
+    "quantidadeMaxima": {
+        "base": 5,
+        "porLevel": 3
+    }
+}

@@ -11,20 +11,7 @@
 
 @implementation Item
 
-+ (NSArray*) All {
-    static NSMutableArray* all = nil;
-    @synchronized(self) {
-        if (all == nil) {
-            all = [[NSMutableArray alloc] init];
-            for (NSString* file in @[@"ItemChave", @"Cama"]) {
-                [all addObject: [Item createFromFile: file]];
-            }
-        }
-    }
-    return all;
-}
-
-+ (Item*) createFromFile: (NSString*) name {
++ (Item*) fromFile: (NSString*) name {
     NSDictionary* data = [Json fromFile: name];
     if (!data)
         return nil;
@@ -35,15 +22,6 @@
     obj.descricao = data[@"descricao"];
     obj.imagem = data[@"imagem"];
     return obj;
-}
-
-+ (Item*) fromFile: (NSString*) name {
-    for (Item* item in [Item All]) {
-        if ([item.arquivo isEqualToString:name]) {
-            return item;
-        }
-    }
-    return nil;
 }
 
 @end

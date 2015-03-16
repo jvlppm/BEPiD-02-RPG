@@ -26,5 +26,19 @@
 			"tipo": "cena",
 			"arquivo": "EstradinhaCasa"
 		},
-	]
+	],
+    "objetos": [
+            {
+                "x": 0.7,
+                "y": 0.75,
+                "width": 0.15,
+                "height": 0.1,
+                "imagem": "EstradaGramadaGalho.png",
+                "transicao": {
+                "tipo": "item",
+                "arquivo": "ItemGalho",
+                "excluiItens": ["ItemGalho"]
+            }
+        }
+    ]
 }
