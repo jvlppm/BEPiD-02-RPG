@@ -66,13 +66,14 @@
 		E82923C91AB633DA0055E478 /* Pantano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923C71AB633DA0055E478 /* Pantano.jpg */; };
 		E82923CA1AB633DA0055E478 /* Pantano.json in Resources */ = {isa = PBXBuildFile; fileRef = E82923C81AB633DA0055E478 /* Pantano.json */; };
 		E82923CC1AB6377D0055E478 /* CampoAberto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E82923CB1AB6377D0055E478 /* CampoAberto.jpg */; };
-		E8560C0A1AB4D77600636FEF /* Item1.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C081AB4D77600636FEF /* Item1.json */; };
+		E8560C0A1AB4D77600636FEF /* Cama.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C081AB4D77600636FEF /* Cama.json */; };
 		E8560C0B1AB4D77600636FEF /* ItemChave.json in Resources */ = {isa = PBXBuildFile; fileRef = E8560C091AB4D77600636FEF /* ItemChave.json */; };
 		E8FA104C1AB648B3002B8A38 /* Cobra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA104A1AB648B3002B8A38 /* Cobra.jpg */; };
 		E8FA104D1AB648B3002B8A38 /* Cobra.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA104B1AB648B3002B8A38 /* Cobra.json */; };
 		E8FA104F1AB64AF7002B8A38 /* ItemChave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA104E1AB64AF7002B8A38 /* ItemChave.jpg */; };
 		E8FA10521AB64C10002B8A38 /* Floresta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10501AB64C10002B8A38 /* Floresta.jpg */; };
 		E8FA10531AB64C10002B8A38 /* Floresta.json in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10511AB64C10002B8A38 /* Floresta.json */; };
+		E8FA10551AB65FB0002B8A38 /* Cama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8FA10541AB65FB0002B8A38 /* Cama.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,13 +172,14 @@
 		E82923C71AB633DA0055E478 /* Pantano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Pantano.jpg; path = Cenas/Pantano.jpg; sourceTree = "<group>"; };
 		E82923C81AB633DA0055E478 /* Pantano.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Pantano.json; path = Cenas/Pantano.json; sourceTree = "<group>"; };
 		E82923CB1AB6377D0055E478 /* CampoAberto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = CampoAberto.jpg; path = Cenas/CampoAberto.jpg; sourceTree = "<group>"; };
-		E8560C081AB4D77600636FEF /* Item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Item1.json; path = Items/Item1.json; sourceTree = "<group>"; };
+		E8560C081AB4D77600636FEF /* Cama.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cama.json; path = Items/Cama.json; sourceTree = "<group>"; };
 		E8560C091AB4D77600636FEF /* ItemChave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ItemChave.json; path = Items/ItemChave.json; sourceTree = "<group>"; };
 		E8FA104A1AB648B3002B8A38 /* Cobra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cobra.jpg; path = Personagens/Cobra.jpg; sourceTree = "<group>"; };
 		E8FA104B1AB648B3002B8A38 /* Cobra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Cobra.json; path = Personagens/Cobra.json; sourceTree = "<group>"; };
 		E8FA104E1AB64AF7002B8A38 /* ItemChave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ItemChave.jpg; path = Items/ItemChave.jpg; sourceTree = "<group>"; };
 		E8FA10501AB64C10002B8A38 /* Floresta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Floresta.jpg; path = Cenas/Floresta.jpg; sourceTree = "<group>"; };
 		E8FA10511AB64C10002B8A38 /* Floresta.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Floresta.json; path = Cenas/Floresta.json; sourceTree = "<group>"; };
+		E8FA10541AB65FB0002B8A38 /* Cama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cama.jpg; path = Items/Cama.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,7 +370,8 @@
 			isa = PBXGroup;
 			children = (
 				E8FA104E1AB64AF7002B8A38 /* ItemChave.jpg */,
-				E8560C081AB4D77600636FEF /* Item1.json */,
+				E8FA10541AB65FB0002B8A38 /* Cama.jpg */,
+				E8560C081AB4D77600636FEF /* Cama.json */,
 				E8560C091AB4D77600636FEF /* ItemChave.json */,
 			);
 			name = Items;
@@ -498,6 +501,7 @@
 				E82923951AB60BC40055E478 /* Cena0.json in Resources */,
 				E82923B31AB61D3A0055E478 /* Rato.json in Resources */,
 				E829237F1AB5D87A0055E478 /* Jogador.json in Resources */,
+				E8FA10551AB65FB0002B8A38 /* Cama.jpg in Resources */,
 				E82923BB1AB61FE20055E478 /* EstradinhaCasa.jpg in Resources */,
 				E82923AD1AB617AD0055E478 /* DentroPorao.jpg in Resources */,
 				E82923941AB60BC40055E478 /* Cena0.jpg in Resources */,
@@ -514,7 +518,7 @@
 				E82923C61AB6332E0055E478 /* Macaco.json in Resources */,
 				E8FA104D1AB648B3002B8A38 /* Cobra.json in Resources */,
 				E8FA10531AB64C10002B8A38 /* Floresta.json in Resources */,
-				E8560C0A1AB4D77600636FEF /* Item1.json in Resources */,
+				E8560C0A1AB4D77600636FEF /* Cama.json in Resources */,
 				E82923B01AB61BB20055E478 /* DentroPoraoChave.png in Resources */,
 				E82923CC1AB6377D0055E478 /* CampoAberto.jpg in Resources */,
 				CF5DC9421AB0EF6D00760540 /* LaunchScreen.xib in Resources */,

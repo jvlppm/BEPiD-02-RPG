@@ -8,6 +8,8 @@
 
 #import "CenaItemViewController.h"
 #import "Inventorio.h"
+#import "Item.h"
+#import "EstadoJogo.h"
 
 @interface CenaItemViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *ivItem;
@@ -26,7 +28,13 @@
     self.ivItem.image = [UIImage imageNamed:self.item.imagem];
     self.tvDescricao.text = self.item.descricao;
     
-    [Inventorio adicionaItem:self.item];
+    if ([self.item.nome isEqualToString:@"Cama"] ) {
+        EstadoJogo* estado = [EstadoJogo unico];
+        estado.energiaJogador = [estado.jogador.energia calculaValor:estado.level];
+    }
+    else {
+        [Inventorio adicionaItem:self.item];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,5 +13,10 @@
             "tipo": "cena",
             "arquivo": "VarandaCasa"
         },
+        {
+            "texto": "Descançar na cama",
+            "tipo": "item",
+            "arquivo": "Cama"
+        }
 	]
 }

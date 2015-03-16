@@ -16,7 +16,7 @@
     @synchronized(self) {
         if (all == nil) {
             all = [[NSMutableArray alloc] init];
-            for (NSString* file in @[@"ItemChave"]) {
+            for (NSString* file in @[@"ItemChave", @"Cama"]) {
                 [all addObject: [Item createFromFile: file]];
             }
         }
