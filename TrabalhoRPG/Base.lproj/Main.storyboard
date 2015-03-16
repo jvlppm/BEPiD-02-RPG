@@ -347,27 +347,36 @@
                         <viewControllerLayoutGuide type="top" id="Aqj-9j-yVJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Ba3-XP-vmS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ie7-B8-bMo">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="ie7-B8-bMo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DentroPorao.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NNw-EL-3sD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fim de Jogo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-D1-6V7">
-                                <rect key="frame" x="137" y="264" width="327" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <rect key="frame" x="129" y="263" width="344" height="74"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
                                 <color key="textColor" red="0.99215692281723022" green="0.0078431377187371254" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="width" secondItem="NNw-EL-3sD" secondAttribute="width" id="Myr-Il-sm3"/>
                             <constraint firstAttribute="centerY" secondItem="TIl-D1-6V7" secondAttribute="centerY" id="QEM-f8-EEu"/>
+                            <constraint firstAttribute="centerX" secondItem="NNw-EL-3sD" secondAttribute="centerX" id="kBn-oz-hyG"/>
                             <constraint firstAttribute="centerX" secondItem="TIl-D1-6V7" secondAttribute="centerX" constant="-0.5" id="pHp-fU-uAL"/>
+                            <constraint firstAttribute="height" secondItem="NNw-EL-3sD" secondAttribute="height" id="qRX-1Y-3AO"/>
+                            <constraint firstAttribute="centerY" secondItem="NNw-EL-3sD" secondAttribute="centerY" id="ttx-N1-WJG"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1h-tL-eBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1795" y="-432"/>
+            <point key="canvasLocation" x="1803" y="-432"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gzz-eT-0qE">
@@ -390,6 +399,7 @@
     </scenes>
     <resources>
         <image name="CampoAberto.jpg" width="960" height="640"/>
+        <image name="DentroPorao.jpg" width="800" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="oqS-dT-EJg"/>
