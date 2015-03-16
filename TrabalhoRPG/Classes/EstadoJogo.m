@@ -88,7 +88,7 @@
 -(float) getLevel {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     float lvl = [defaults floatForKey:@"levelJogador"];
-    if (!lvl || lvl <= 0)
+    if (lvl <= 0)
         return 1;
     return lvl;
 }
@@ -96,6 +96,34 @@
 -(void) setLevel: (float)value {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     [defaults setFloat:value forKey:@"levelJogador"];
+    [defaults synchronize];
+}
+
+-(float) getXP {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    float lvl = [defaults floatForKey:@"xpJogador"];
+    if (lvl <= 0)
+        return 0;
+    return lvl;
+}
+
+-(void) setXP: (float)value {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setFloat:value forKey:@"xpJogador"];
+    [defaults synchronize];
+}
+
+-(float) getLevelXP {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    float lvl = [defaults floatForKey:@"levelXP"];
+    if (lvl <= 0)
+        return 10;
+    return lvl;
+}
+
+-(void) setLevelXP: (float)value {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setFloat:value forKey:@"levelXP"];
     [defaults synchronize];
 }
 

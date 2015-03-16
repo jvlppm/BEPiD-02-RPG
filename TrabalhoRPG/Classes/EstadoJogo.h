@@ -19,6 +19,8 @@
 @property (getter=getEnergiaJogador, setter=setEnergiaJogador:) float energiaJogador;
 @property (getter=getAtaques, setter=setAtaques:) NSArray* ataques;
 @property (getter=getLevel, setter=setLevel:) float level;
+@property (getter=getXP, setter=setXP:) float xp;
+@property (getter=getLevelXP, setter=setLevelXP:) float levelXp;
 
 @property Personagem* jogador;
 

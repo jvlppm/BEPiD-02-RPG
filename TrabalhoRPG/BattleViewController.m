@@ -59,13 +59,22 @@
 }
 
 - (void) ataqueInimigo {
+    EstadoJogo* estado = [EstadoJogo unico];
     
     if (energiaInimigo <= 0) {
+        estado.xp += [self.inimigo.xp calculaValor:self.inimigo.level];
+        
+        while (estado.xp >= estado.levelXp) {
+            estado.level++;
+            estado.xp -= estado.levelXp;
+            estado.levelXp *= 2;
+        }
+        
         [self.navigationController popViewControllerAnimated:YES];
         return;
     }
     
-    EstadoJogo* estado = [EstadoJogo unico];
+    
     
     int nAt = arc4random() % self.inimigo.ataques.count;
     Ataque* opcao = [Ataque fromFile:self.inimigo.ataques[nAt]];

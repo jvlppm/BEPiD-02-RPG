@@ -5,8 +5,8 @@
     "inimigosPossiveis": [ {
                           "chance": 0.3,
                           "arquivo": "Rato",
-                          "level_min": 1,
-                          "level_max": 2
+                          "level_min": 4,
+                          "level_max": 4
                           }],
 	"acoes": [
 		{
