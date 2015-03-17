@@ -25,6 +25,11 @@
     EstadoJogo* estado = [EstadoJogo unico];
     self.ivCenaAtual.image = [UIImage imageNamed:estado.cenaAtual.imagem];
     self.btnNewGame.enabled = !estado.novoJogo;
+    
+    if (estado.novoJogo)
+        self.btnNewGame.alpha = 0;
+    else
+        self.btnNewGame.alpha = 1;
 }
 
 - (void)didReceiveMemoryWarning {
